@@ -1,0 +1,37 @@
+﻿/*RoomList*/
+
+.roomList {
+    width:100%;
+}
+.roomList th{font-size:.9em}
+
+/*padding based on h3 for the room title*/
+.roomListItem {margin:5px 0px; border-color:brown; }
+.roomListItem td{vertical-align:top; padding-top:1.2em;}
+.roomListItem img{ width:150px;}
+.roomListItem h3{margin:0px;}
+.roomListItem .roomTitleColumn{padding:0px 10px 0px 10px;}
+.roomListItem .roomThumbColumn{width:150px;padding-top:0em;}
+.roomListItem .priceColumn{width:100px; font-weight:bold; font-size:1.1em;}
+.roomListItem .maxGuestsColumn{width:65px}
+.roomListItem .selectColumn{width:100px;}
+.roomListItem .selectColumn a, .RoomsSelectRoom{
+    padding:3px 5px; background-color:orange; border-radius:2px; border-color:darkorange; border-width:2px; text-decoration:none; color:white; font-weight:bold;
+}
+
+.roomListItemBreak hr{margin:9px 0px 15px 0px;}
+
+.roomOccupant{background:url('../Images/Resources/roomOccupants.png') no-repeat; height:30px; display:inline-block; width:11px}
+
+
+/* Email reservation*/
+.reservationRoomTypeDetails img{width:200px;}
+.reservationRoomTypeDetails h3{margin:0px; color: #fff554;font-size:1.5em; font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;font-weight:normal;}
+.reservationRoomTypeDetails{
+    background-color: #5C3317;
+    border-radius:4px;
+    padding:5px 15px 5px 15px;
+    color: #d5a787;
+    margin-bottom:25px;
+    /*margin-right:100px;*/
+}

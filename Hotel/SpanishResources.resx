@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="HotelName" xml:space="preserve">
+    <value>Hostal El Eden</value>
+  </data>
+  <data name="MenuRooms" xml:space="preserve">
+    <value>Habitaciones</value>
+  </data>
+  <data name="RoomDoubleImageURL" xml:space="preserve">
+    <value>RoomPictures/gallery-3.jpg</value>
+  </data>
+  <data name="RoomDoubleMaxGuests" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RoomQuadrupleIURL" xml:space="preserve">
+    <value>RoomPictures/gallery-7.jpg</value>
+  </data>
+  <data name="RoomQuadrupleMaxGuests" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RoomSingleDescription" xml:space="preserve">
+    <value>Descripcion sencilla!</value>
+  </data>
+  <data name="RoomSingleImageURL" xml:space="preserve">
+    <value>RoomPictures/gallery-1.jpg</value>
+  </data>
+  <data name="RoomSingleMaxGuests" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RoomSingleRate" xml:space="preserve">
+    <value>6.50</value>
+  </data>
+  <data name="RoomSingleShortDescription" xml:space="preserve">
+    <value>Very short description single!&lt;ul&gt;&lt;li&gt;test&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="RoomSingleThumbURL" xml:space="preserve">
+    <value>RoomPictures/gallery-1_thumb.jpg</value>
+  </data>
+  <data name="RoomSingleTitle" xml:space="preserve">
+    <value>Habitacion Sencilla</value>
+  </data>
+  <data name="RoomSingleURL" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="RoomsPageDescription" xml:space="preserve">
+    <value>En Hostal El Eden contamos con ...... que mas aqui?</value>
+  </data>
+  <data name="RoomsSelectRoom" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="RoomsTitle" xml:space="preserve">
+    <value>Habitaciones</value>
+  </data>
+  <data name="RoomTripleImageURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomTripleMaxGuests" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ReservePageTitle" xml:space="preserve">
+    <value>Reservar Habitacion</value>
+  </data>
+  <data name="ReserveFormArrivalDate" xml:space="preserve">
+    <value>Llegada</value>
+  </data>
+  <data name="ReserveFormDepartureDate" xml:space="preserve">
+    <value>Salida</value>
+  </data>
+  <data name="ReserveFormFirstName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="ReserveFormLastName" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="ReserveFormNumPeople" xml:space="preserve">
+    <value>No. de Personas</value>
+  </data>
+  <data name="ReserveFormRoomTypeName" xml:space="preserve">
+    <value>Habitacion</value>
+  </data>
+  <data name="ReserveFormSubmit" xml:space="preserve">
+    <value>Reservar</value>
+  </data>
+  <data name="ReserveFormTelephone" xml:space="preserve">
+    <value>Telefono</value>
+  </data>
+  <data name="ReserveFormTotal" xml:space="preserve">
+    <value>Total = {0} personas X ${1} USD = $</value>
+  </data>
+  <data name="ReservePageDescription" xml:space="preserve">
+    <value>Reservar por email porque????</value>
+  </data>
+  <data name="RoomSingleKeyword" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="RoomDoubleMatrimonialKeyword" xml:space="preserve">
+    <value>DoubleMatrimonial</value>
+  </data>
+  <data name="RoomDoubleSimpleKeyword" xml:space="preserve">
+    <value>DoubleSimple</value>
+  </data>
+  <data name="RoomMatrimonialAndDoubleSimpleKeyword" xml:space="preserve">
+    <value>MatrimonialAndDoubleSimple</value>
+  </data>
+  <data name="RoomMatrimonialAndSimpleKeyword" xml:space="preserve">
+    <value>MatrimonialAndSimple</value>
+  </data>
+  <data name="RoomMatrimonialKeyword" xml:space="preserve">
+    <value>Matrimonial</value>
+  </data>
+  <data name="RoomQuadrupleSimpleKeyword" xml:space="preserve">
+    <value>QuadrupleSimple</value>
+  </data>
+  <data name="RoomTripleSimpleKeyword" xml:space="preserve">
+    <value>TripleSimple</value>
+  </data>
+  <data name="ReserveFormEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="RoomsCostColumn" xml:space="preserve">
+    <value>costo</value>
+  </data>
+  <data name="RoomsCountColumn" xml:space="preserve">
+    <value>cant. cuartos</value>
+  </data>
+  <data name="RoomsReservePeoplePerRoom" xml:space="preserve">
+    <value>personas por cuarto</value>
+  </data>
+  <data name="RoomsReserveTotalColumn" xml:space="preserve">
+    <value>total</value>
+  </data>
+  <data name="RoomsSearchDescription" xml:space="preserve">
+    <value>De {0} a {1}</value>
+  </data>
+  <data name="FooterAuthor" xml:space="preserve">
+    <value>Jorge Gabuardi</value>
+  </data>
+  <data name="HomeAmenitiesDetails" xml:space="preserve">
+    <value>&lt;p&gt;Contamos con habitaciones simples, dobles, triples y cuadruples con banio privado. Las habitaciones son amplias, cuentan con television y cable y proveemos WiFi.&lt;/p&gt;&lt;p&gt;El hotel se encuentra en medio de Banios a pocos pasos de todas las atracciones turisticas.&lt;/p&gt;&lt;p&gt;Nuestro personal puede guiarlos en opciones y lugares disponibles para realizar paseos en bicicleta o motocicleta, canoas, rafting o actividades relajantes,</value>
+  </data>
+  <data name="HomeInstructionsForReservations" xml:space="preserve">
+    <value>Para hacer una reservacion, revise nuestras habitaciones disponibles o ingrese las fechas deseadas en la forma en la parte superior derecha de la pagina.</value>
+  </data>
+  <data name="HomeWelcomeDetails" xml:space="preserve">
+    <value>&lt;p&gt;Aqui encontrara una estadia placentera mientras es atendido por gente amable y dispuesta a ayudarlo en todo lo necesario para que su visita sea inolvidable.&lt;/p&gt;</value>
+  </data>
+  <data name="HomeWelcomeTitle" xml:space="preserve">
+    <value>Bienvenido a Hostal El Eden!</value>
+  </data>
+  <data name="MenuBanos" xml:space="preserve">
+    <value>Baños</value>
+  </data>
+  <data name="MenuContacto" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="MenuGallery" xml:space="preserve">
+    <value>Galeria</value>
+  </data>
+</root>

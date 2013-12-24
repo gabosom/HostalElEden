@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper imageContainers " >
+                <div class="float-left site-title-wrapper clear-fix">
+                    
+                    <p class="site-title">@Html.ActionLink(@HotelEden.SpanishResources.HotelName, "Index", "Home")</p>
+                </div>
+            </div>
+            <div class="headerBreak content-wrapper clear-fix">
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper clear-fix">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="/">Inicio</a>
+                        </li>
+                        <li>
+                            @Html.ActionLink(HotelEden.SpanishResources.MenuRooms, "Index", "Rooms")
+                        </li>
+                        <li>
+                            @Html.ActionLink(HotelEden.SpanishResources.MenuGallery,"Gallery","Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink(HotelEden.SpanishResources.MenuBanos, "Banos", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink(HotelEden.SpanishResources.MenuContacto, "Contact", "Home")
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper clear-fix">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - @HotelEden.SpanishResources.FooterAuthor</p>
+                </div>
+            </div>
+        </footer>
+
+        
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

@@ -1,0 +1,42 @@
+﻿@model HotelEden.Models.Room
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Room</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RoomNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RoomNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Floor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Floor)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RoomType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RoomType.Description)
+    </div>
+    <div class="display-label">
+         Precio Regular
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RoomType.Rate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

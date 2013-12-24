@@ -1,0 +1,53 @@
+﻿@model IEnumerable<HotelEden.Models.RoomType>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Template.cshtml";
+}
+
+<h2>@HotelEden.SpanishResources.RoomsTitle</h2>
+<p>@HotelEden.SpanishResources.RoomsPageDescription
+    </p>
+<table class="roomList">
+    <tr>
+        <th colspan="2"></th>
+        <th>max.</th>
+        <th>por persona</th>
+        <th></th>
+    </tr>
+    <tr class="roomListItemBreak">
+        <td colspan="5">
+            <hr />
+        </td>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="roomListItem">
+        <td class="roomThumbColumn">
+            <img src="@Html.DisplayFor(modelItem => item.ImageURL)" />
+        </td>
+        <td class="roomTitleColumn">
+            <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+            <span>@Html.Raw(item.Description)</span>
+        </td>
+        <td class="maxGuestsColumn">
+            @for (int i = 0; i < item.MaxGuestNo; i++ )
+            {
+                <span class="roomOccupant"></span>
+            }
+@*          @Html.DisplayFor(modelItem => item.MaxGuestNo)*@</td>
+        <td class="priceColumn">
+            USD $@Html.DisplayFor(modelItem => item.Rate)
+        </td>
+        <td class="selectColumn">
+            @Html.ActionLink(HotelEden.SpanishResources.RoomsSelectRoom, "Reserve", "Rooms", new { room=item.URL },null)
+        </td>
+    </tr>
+    <tr class="roomListItemBreak">
+        <td colspan="5">
+            <hr />
+        </td>
+    </tr>
+}
+
+</table>
