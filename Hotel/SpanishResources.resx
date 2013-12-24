@@ -294,4 +294,7 @@
   <data name="SiteRoomsTitle" xml:space="preserve">
     <value>Habitaciones</value>
   </data>
+  <data name="RoomsReserveTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
 </root>

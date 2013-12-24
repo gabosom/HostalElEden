@@ -484,6 +484,15 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total.
+        /// </summary>
+        public static string RoomsReserveTotal {
+            get {
+                return ResourceManager.GetString("RoomsReserveTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to total.
         /// </summary>
         public static string RoomsReserveTotalColumn {

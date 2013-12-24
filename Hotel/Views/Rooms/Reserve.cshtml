@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = HotelEden.SpanishResources.SiteRoomsReserve;
     Layout = "~/Views/Shared/_Template.cshtml";
+    double total = 0;
 }
 
 <h2>@HotelEden.SpanishResources.ReservePageTitle</h2>
@@ -11,15 +12,15 @@
 @using (Html.BeginForm("SubmitReserve","Rooms",FormMethod.Get)) {
 <article>
     
-    <table class="roomList">
+    <table class="roomList reserveList">
         <tr>
             <th></th>
             <th>@HotelEden.SpanishResources.RoomsCostColumn</th>
             <th>@HotelEden.SpanishResources.RoomsReservePeoplePerRoom</th>
-            <th>@HotelEden.SpanishResources.RoomsReserveTotalColumn</th>
+            @*<th>@HotelEden.SpanishResources.RoomsReserveTotalColumn</th>*@
         </tr>
         <tr class="roomListItemBreak">
-            <td colspan="5">
+            <td colspan="3">
                 <hr />
             </td>
         </tr>
@@ -27,14 +28,18 @@
         @{int currentRoomCount = 0;}
         @foreach (var item in Model.ReservedRoomTypes)
         {
-            @* need hidden input to submit multiple roomTypes: http://stackoverflow.com/questions/231878/complex-model-binding-to-a-list *@
-            @Html.Hidden("ReservedRoomTypes.Index", currentRoomCount)
-            @Html.Hidden("ReservedRoomTypes["+currentRoomCount+"].Keyword",item.Keyword)
+            
+            total += item.Rate;
+                
             <tr class="roomListItem">
+
                 @*<td class="roomThumbColumn">
                     @*<img src="@Html.DisplayFor(modelItem => item.ImageURL)" />
                 </td>*@
                 <td class="roomTitleColumn">
+                    @* need hidden input to submit multiple roomTypes: http://stackoverflow.com/questions/231878/complex-model-binding-to-a-list *@
+                    @Html.Hidden("ReservedRoomTypes.Index", currentRoomCount)
+                    @Html.Hidden("ReservedRoomTypes[" + currentRoomCount + "].Keyword", item.Keyword)
                     <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
                     <div>
                         @for (int i = 0; i < item.MaxGuestNo; i++)
@@ -65,12 +70,12 @@
                     </select>
                 </td>
                 @{currentRoomCount++;}
-                <td class="selectColumn">
-                    @*@Html.ActionLink(HotelEden.SpanishResources.RoomsSelectRoom, "Reserve", "Rooms", new { room = item.URL }, null)*@
-                </td>
+                @*<td class="selectColumn">
+                    Html.ActionLink(HotelEden.SpanishResources.RoomsSelectRoom, "Reserve", "Rooms", new { room = item.URL }, null)
+                </td>*@
             </tr>
             <tr class="roomListItemBreak">
-                <td colspan="5">
+                <td colspan="3">
                     <hr />
                 </td>
             </tr>
@@ -78,10 +83,14 @@
         }
 
         <tr>
-            <td colspan="2"></td>
-            <td></td>
-            <td></td>
-            <td><input class="RoomsSelectRoom" type="submit" value="@HotelEden.SpanishResources.RoomsSelectRoom" /></td>
+            <td class="roomTitleColumn">
+                <h3>@HotelEden.SpanishResources.RoomsReserveTotal</h3>
+            </td>
+            <td colspan="2">
+                $@String.Format("{0:0.00}", total)
+            </td>
+            
+            @*<td><input class="RoomsSelectRoom" type="submit" value="@HotelEden.SpanishResources.RoomsSelectRoom" /></td>*@
         </tr>
     </table>
 
