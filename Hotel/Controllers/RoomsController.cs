@@ -85,10 +85,31 @@ namespace HotelEden.Models
         {
             if (ModelState.IsValid)
             {
+                //complete roomtype information
+                foreach (RoomType roomType in fullReservation.ReservedRoomTypes)
+                    roomType.CompletePropertiesFromKeyword();
+
+                fullReservation.NumNights = fullReservation.CheckOutDate.Subtract(fullReservation.CheckInDate).Days;
+
+                //mandar email al hostal con la reservacion
                 Emailer emailer = new Emailer();
+                emailer.AddToDestinatary(Settings.HostalEmail);
+                emailer.EmailSubject= "Reservacion de " + fullReservation.FirstName + " " + fullReservation.LastName;
+
+                //Detalles del cliente
+                emailer.AddString("Nombre: " + fullReservation.FirstName + " " + fullReservation.LastName);
+                emailer.AddString("Email: " + fullReservation.Email);
+                emailer.AddString("Fecha de Llegada: " + fullReservation.CheckInDate.ToShortDateString());
+                emailer.AddString("Fecha de Salida: " + fullReservation.CheckOutDate.ToShortDateString());
+                emailer.AddString("Numero de noches: " + fullReservation.NumNights);
+                emailer.AddString("Total de habitaciones: " + fullReservation.ReservedRoomTypes.Count);
+
+                int count = 1;
                 foreach(RoomType room in fullReservation.ReservedRoomTypes)
                 {
-                    emailer.AddString("Un cuarto es" + room.Keyword);
+                    emailer.AddString("<h3>Habitacion " + count++ + "</h3>");
+                    emailer.AddString("Tipo de habitacion: " + room.Title);
+                    emailer.AddString("Numero de huespedes: " + room.CurrentGuests);
                 }
 
                 emailer.SendEmail();

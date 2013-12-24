@@ -1,7 +1,9 @@
-﻿using System;
+﻿using HotelEden.Utils;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 
@@ -211,6 +213,18 @@ namespace HotelEden.Models
             set
             {
                 this._ThumbURL = "/Content/" + value;
+            }
+        }
+
+        public void CompletePropertiesFromKeyword()
+        {
+            RoomType tmpRoom = RoomFactory.GetSpecificRoomType(this.Keyword);
+
+            foreach(PropertyInfo propertyInfo in typeof(RoomType).GetProperties())
+            {
+                //current guests is per reservation and shouldn't be overriden
+                if (propertyInfo.Name != "CurrentGuests")
+                    propertyInfo.SetValue(this, propertyInfo.GetValue(tmpRoom));
             }
         }
     }

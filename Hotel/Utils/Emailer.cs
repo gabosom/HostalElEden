@@ -12,7 +12,8 @@ namespace HotelEden.Utils
     {
         private SmtpClient smtpClient;
         private List<string> StringsToAdd;
-
+        private List<string> ToEmailList { get; set; }
+        public string EmailSubject { get; set; }
 
         public Emailer()
         {
@@ -22,9 +23,15 @@ namespace HotelEden.Utils
             this.smtpClient.UseDefaultCredentials = false;
             this.smtpClient.Port = 587;
             this.StringsToAdd = new List<string>();
+            this.ToEmailList = new List<string>();
+            this.EmailSubject = "";
         }
 
 
+        public void AddToDestinatary(string s)
+        {
+            this.ToEmailList.Add(s);
+        }
         public void SetListOfStrings(List<string> list)
         {
             this.StringsToAdd = list;
@@ -39,27 +46,36 @@ namespace HotelEden.Utils
 
         public void SendEmail()
         {
-            var client = new MailgunClient("app11597.mailgun.org", "key-4iy0ndobwhtrtu82rum2xb-xeyf71ye1");
+            if (this.ToEmailList.Count == 0)
+                throw new Exception("There are no email addresses in the To line");
+            try
+            {
+                var client = new MailgunClient("app11597.mailgun.org", "key-4iy0ndobwhtrtu82rum2xb-xeyf71ye1");
 
 
-            MailMessage email = new MailMessage();
-            email.IsBodyHtml = true;
-            email.From = new MailAddress("hostaleleden@app11597.mailgun.org");
-            email.To.Add("gabosom@gmail.com");
-            email.Subject = "Reservation test";
-            email.Body = "<h1>Scheduling report</h1>";
-
-
-            email.Body += "<ul>";
-            foreach (string s in this.StringsToAdd)
-                email.Body += "<li>" + s + "</li>";
-            email.Body += "</ul>";
-
+                MailMessage email = new MailMessage();
+                email.IsBodyHtml = true;
+                email.From = new MailAddress("hostaleleden@app11597.mailgun.org");
+                foreach(string toAddress in this.ToEmailList)
+                    email.To.Add(toAddress);
+                email.Subject = this.EmailSubject;
 
 
 
-            client.SendMail(email);
-            Console.WriteLine("Email done: ");
+                foreach (string s in this.StringsToAdd)
+                    email.Body += s + "<br />";
+               
+                client.SendMail(email);
+                Console.WriteLine("Email done: ");
+                }
+            catch(Exception e)
+            {
+
+            }
+
+
+
+            
             //WebClient webClient = new WebClient();
             //string parameters = "";
             //Dictionary<string, string> emailValues = new Dictionary<string, string>();

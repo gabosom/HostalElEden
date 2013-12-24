@@ -160,6 +160,11 @@ namespace HotelEden.Utils
                 
                 
         }
+
+        public static RoomType GetSpecificRoomType(string p)
+        {
+            return RoomFactory.GetSpecificRoomType((RoomTypes)Enum.Parse(typeof(RoomTypes), p));
+        }
     }
 
     public enum RoomTypes
