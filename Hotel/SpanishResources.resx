@@ -279,4 +279,19 @@
   <data name="RoomMatrimonialMaxGuests" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="SiteMainTitle" xml:space="preserve">
+    <value>Hostal El Eden</value>
+  </data>
+  <data name="SiteHomeTitle" xml:space="preserve">
+    <value>Bienvenido</value>
+  </data>
+  <data name="SiteRoomsReserve" xml:space="preserve">
+    <value>Reservar</value>
+  </data>
+  <data name="SiteRoomsSuccess" xml:space="preserve">
+    <value>Confirmacion</value>
+  </data>
+  <data name="SiteRoomsTitle" xml:space="preserve">
+    <value>Habitaciones</value>
+  </data>
 </root>

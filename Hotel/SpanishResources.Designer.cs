@@ -545,5 +545,50 @@ namespace HotelEden {
                 return ResourceManager.GetString("RoomTripleSimpleKeyword", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bienvenido.
+        /// </summary>
+        public static string SiteHomeTitle {
+            get {
+                return ResourceManager.GetString("SiteHomeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hostal El Eden.
+        /// </summary>
+        public static string SiteMainTitle {
+            get {
+                return ResourceManager.GetString("SiteMainTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reservar.
+        /// </summary>
+        public static string SiteRoomsReserve {
+            get {
+                return ResourceManager.GetString("SiteRoomsReserve", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirmacion.
+        /// </summary>
+        public static string SiteRoomsSuccess {
+            get {
+                return ResourceManager.GetString("SiteRoomsSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Habitaciones.
+        /// </summary>
+        public static string SiteRoomsTitle {
+            get {
+                return ResourceManager.GetString("SiteRoomsTitle", resourceCulture);
+            }
+        }
     }
 }
