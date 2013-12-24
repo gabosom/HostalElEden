@@ -235,7 +235,7 @@
     <value>Email</value>
   </data>
   <data name="RoomsCostColumn" xml:space="preserve">
-    <value>costo</value>
+    <value>costo por noche</value>
   </data>
   <data name="RoomsCountColumn" xml:space="preserve">
     <value>cant. cuartos</value>
@@ -314,5 +314,11 @@
   </data>
   <data name="ValidationRequiredLastName" xml:space="preserve">
     <value>Ingrese su Apellido</value>
+  </data>
+  <data name="RoomsContinueAsValid" xml:space="preserve">
+    <value>Continuar</value>
+  </data>
+  <data name="RoomsValidateCount" xml:space="preserve">
+    <value>Seleccione 1 habit. minimo</value>
   </data>
 </root>

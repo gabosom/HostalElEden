@@ -367,7 +367,16 @@ namespace HotelEden {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to costo.
+        ///   Looks up a localized string similar to Continuar.
+        /// </summary>
+        public static string RoomsContinueAsValid {
+            get {
+                return ResourceManager.GetString("RoomsContinueAsValid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to costo por noche.
         /// </summary>
         public static string RoomsCostColumn {
             get {
@@ -525,6 +534,15 @@ namespace HotelEden {
         public static string RoomsTitle {
             get {
                 return ResourceManager.GetString("RoomsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seleccione 1 habit. minimo.
+        /// </summary>
+        public static string RoomsValidateCount {
+            get {
+                return ResourceManager.GetString("RoomsValidateCount", resourceCulture);
             }
         }
         

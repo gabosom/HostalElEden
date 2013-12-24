@@ -21,7 +21,7 @@
             <th colspan="2"></th>
             <th>@HotelEden.SpanishResources.RoomsCostColumn</th>
             <th>@HotelEden.SpanishResources.RoomsCountColumn</th>
-            <th><input class="RoomsSelectRoom" type="submit" value="@HotelEden.SpanishResources.RoomsSelectRoom" /></th>
+            <th><input class="RoomsSelectRoom disabledNextButton" type="submit" value="@HotelEden.SpanishResources.RoomsValidateCount" /></th>
         </tr>
         <tr class="roomListItemBreak">
             <td colspan="5">
@@ -75,65 +75,10 @@
             <td colspan="2"></td>
             <td></td>
             <td></td>
-            <td><input class="RoomsSelectRoom" type="submit" value="@HotelEden.SpanishResources.RoomsSelectRoom" /></td>
+            <td><input class="RoomsSelectRoom disabledNextButton" type="submit" value="@HotelEden.SpanishResources.RoomsValidateCount" /></td>
         </tr>
     </table>
 
-
-@*</div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.CheckOutDate)
-            @Html.ValidationMessageFor(model => model.CheckOutDate)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.MatrimonialCount)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.MatrimonialCount)
-            @Html.ValidationMessageFor(model => model.MatrimonialCount)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DoubleSimpleCount)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DoubleSimpleCount)
-            @Html.ValidationMessageFor(model => model.DoubleSimpleCount)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.MatrimonialAndSimpleCount)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.MatrimonialAndSimpleCount)
-            @Html.ValidationMessageFor(model => model.MatrimonialAndSimpleCount)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DoubleMatrimonialCount)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DoubleMatrimonialCount)
-            @Html.ValidationMessageFor(model => model.DoubleMatrimonialCount)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.TripleSimpleCount)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.TripleSimpleCount)
-            @Html.ValidationMessageFor(model => model.TripleSimpleCount)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.QuadrupleSimpleCount)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.QuadrupleSimpleCount)
-            @Html.ValidationMessageFor(model => model.QuadrupleSimpleCount)
-        </div>*@
-        
 
         <p>
             <input type="submit" value="Save" />
@@ -143,4 +88,28 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        $(document).ready(function () {
+            $("select[name$='Count']").change(function () {
+                totalRoomCount = 0;
+                
+                $("select[name$='Count']").each(function (index) {
+                    totalRoomCount += parseInt($(this).val()); //val() is treated as string othrewise
+                    
+                });
+                
+                if(totalRoomCount > 0)
+                {
+                    $(".RoomsSelectRoom").removeClass("disabledNextButton").val("@HotelEden.SpanishResources.RoomsContinueAsValid");
+                    
+                }
+                else
+                {
+                    $(".RoomsSelectRoom").addClass("disabledNextButton").val("@HotelEden.SpanishResources.RoomsValidateCount");
+                }
+
+            });
+        });
+    </script>
 }

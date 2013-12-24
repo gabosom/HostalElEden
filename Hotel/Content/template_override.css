@@ -16,13 +16,16 @@
 .roomListItem .maxGuestsColumn{width:65px}
 .roomListItem .selectColumn{width:100px;}
 .roomListItem .selectColumn a, .RoomsSelectRoom{
-    padding:3px 5px; background-color:orange; border-radius:2px; border-color:darkorange; border-width:2px; text-decoration:none; color:white; font-weight:bold;
+    padding:3px 5px; background-color:orange; border-radius:2px; border-color:darkorange; border-width:2px; text-decoration:none; color:white; font-weight:bold; width:100px !important; white-space:pre-wrap;height:3.4em;
 }
 
 .roomListItemBreak hr{margin:9px 0px 15px 0px;}
 
 .roomOccupant{background:url('../Images/Resources/roomOccupants.png') no-repeat; height:30px; display:inline-block; width:11px}
-
+.disabledNextButton
+{
+    background-color:gray;
+}
 
 /* Email reservation*/
 .reservationRoomTypeDetails img{width:200px;}
