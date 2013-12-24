@@ -13,7 +13,7 @@
     
     <table class="roomList">
         <tr>
-            <th colspan="2"></th>
+            <th></th>
             <th>@HotelEden.SpanishResources.RoomsCostColumn</th>
             <th>@HotelEden.SpanishResources.RoomsReservePeoplePerRoom</th>
             <th>@HotelEden.SpanishResources.RoomsReserveTotalColumn</th>
@@ -31,9 +31,9 @@
             @Html.Hidden("ReservedRoomTypes.Index", currentRoomCount)
             @Html.Hidden("ReservedRoomTypes["+currentRoomCount+"].Keyword",item.Keyword)
             <tr class="roomListItem">
-                <td class="roomThumbColumn">
-                    <img src="@Html.DisplayFor(modelItem => item.ImageURL)" />
-                </td>
+                @*<td class="roomThumbColumn">
+                    @*<img src="@Html.DisplayFor(modelItem => item.ImageURL)" />
+                </td>*@
                 <td class="roomTitleColumn">
                     <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
                     <div>
