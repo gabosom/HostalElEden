@@ -40,3 +40,7 @@
 .reserveList td{padding-top:0px;}
 .reserveList .lastBreak hr{margin-bottom:0px;}
 .reserveList .totalRow{border:1px solid black}
+
+
+/*** Home page reservation*/
+.homeReservation .validation-summary-errors ul{margin-top:0px; margin-bottom:0px;}

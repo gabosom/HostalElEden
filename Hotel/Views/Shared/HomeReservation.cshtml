@@ -14,6 +14,7 @@
             <div style="padding:5px;">
                 @using (Html.BeginForm("Search", "Rooms",FormMethod.Get)) {
                     <table border="0" style="width:90%; margin:auto">
+                        
                         <tr>
                             <td class="formLabel" >Llegada</td>
                             <td>
@@ -38,14 +39,11 @@
                                 <input type="submit" value="Buscar" />
                             </td>
                         </tr>
-                        @*<tr>
-                          <td ><label>
-                            <input type="text" name="textfield">
-                          </label></td>
-                          <td ><label>
-                          <input type="image" src="images/index_27.gif" name="imageField">
-                          </label></td>
-                        </tr>*@
+                        <tr>
+                            <td colspan="2">
+                                @Html.ValidationSummary()
+                            </td>
+                        </tr>
                   </table>
                 }
             </div>

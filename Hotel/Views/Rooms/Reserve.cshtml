@@ -152,6 +152,11 @@
                     <input type="submit" value="@HotelEden.SpanishResources.ReserveFormSubmit" />
                 </td>
             </tr>
+            <tr>
+                <td colspan="2">
+                    @Html.ValidationSummary()
+                </td>
+            </tr>
         </table>
 
 </aside>
@@ -159,6 +164,7 @@
 
 @section Scripts{
     @Scripts.Render("~/bundles/jqueryui")
+@Scripts.Render("~/bundles/jqueryval")
     @Styles.Render("~/Content/themes/base/css")
 
     <script>

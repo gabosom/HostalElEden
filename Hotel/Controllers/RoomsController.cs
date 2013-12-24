@@ -55,7 +55,7 @@ namespace HotelEden.Models
             return View(RoomFactory.GetAllRooms());
         }
 
-        public ActionResult Search(Reservation reservationSearch)
+        public ActionResult Search(RoomTypesReservationViewModel reservationSearch)
         {
             if(ModelState.IsValid && reservationSearch.CheckInDate != null && reservationSearch.CheckOutDate != null)
             {
@@ -77,7 +77,7 @@ namespace HotelEden.Models
             else
             {
                 //TODO: show errors
-                return RedirectToAction("Index");
+                return View("Index", reservationSearch);
             }
         }
 

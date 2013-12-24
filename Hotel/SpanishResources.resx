@@ -297,4 +297,22 @@
   <data name="RoomsReserveTotal" xml:space="preserve">
     <value>Total</value>
   </data>
+  <data name="ValidationRequiredCheckInDate" xml:space="preserve">
+    <value>Ingrese una fecha de llegada</value>
+  </data>
+  <data name="ValidationRequiredCheckOutDate" xml:space="preserve">
+    <value>Ingrese una fecha de salida</value>
+  </data>
+  <data name="ValidationIncorrectEmail" xml:space="preserve">
+    <value>Ingrese un email correcto</value>
+  </data>
+  <data name="ValidationRequiredEmail" xml:space="preserve">
+    <value>Ingrese su Email</value>
+  </data>
+  <data name="ValidationRequiredFirstName" xml:space="preserve">
+    <value>Ingrese su Nombre</value>
+  </data>
+  <data name="ValidationRequiredLastName" xml:space="preserve">
+    <value>Ingrese su Apellido</value>
+  </data>
 </root>

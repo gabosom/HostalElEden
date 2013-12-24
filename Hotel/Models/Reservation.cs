@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -100,13 +101,19 @@ namespace HotelEden.Models
 
         public int Id { get; set; }
 
+        [Required(ErrorMessageResourceName = "ValidationRequiredFirstName", ErrorMessageResourceType = typeof(SpanishResources))]
         public string FirstName { get; set; }
+        [Required(ErrorMessageResourceName = "ValidationRequiredLastName", ErrorMessageResourceType = typeof(SpanishResources))]
         public string LastName { get; set; }
+        [Required(ErrorMessageResourceName = "ValidationRequiredEmail", ErrorMessageResourceType = typeof(SpanishResources))]
+        [EmailAddress(ErrorMessageResourceName = "ValidationIncorrectEmail", ErrorMessageResourceType = typeof(SpanishResources), ErrorMessage = null)] //aha: http://stackoverflow.com/questions/12474876/either-errormessagestring-or-errormessageresourcename-must-be-set-but-not-both
         public string Email { get; set; }
         public DateTime ReservedDate { get; set; }
         public int NumNights { get; set; }
         public int NumGuests { get; set; }
+        [Required(ErrorMessageResourceName = "ValidationRequiredCheckInDate", ErrorMessageResourceType=typeof(SpanishResources))]
         public DateTime CheckInDate { get; set; }
+        [Required(ErrorMessageResourceName = "ValidationRequiredCheckOutDate", ErrorMessageResourceType = typeof(SpanishResources))]
         public DateTime CheckOutDate { get; set; }
         public double TotalPrice { get; set; }
 

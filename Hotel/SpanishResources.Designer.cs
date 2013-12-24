@@ -599,5 +599,59 @@ namespace HotelEden {
                 return ResourceManager.GetString("SiteRoomsTitle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingrese un email correcto.
+        /// </summary>
+        public static string ValidationIncorrectEmail {
+            get {
+                return ResourceManager.GetString("ValidationIncorrectEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingrese una fecha de llegada.
+        /// </summary>
+        public static string ValidationRequiredCheckInDate {
+            get {
+                return ResourceManager.GetString("ValidationRequiredCheckInDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingrese una fecha de salida.
+        /// </summary>
+        public static string ValidationRequiredCheckOutDate {
+            get {
+                return ResourceManager.GetString("ValidationRequiredCheckOutDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingrese su Email.
+        /// </summary>
+        public static string ValidationRequiredEmail {
+            get {
+                return ResourceManager.GetString("ValidationRequiredEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingrese su Nombre.
+        /// </summary>
+        public static string ValidationRequiredFirstName {
+            get {
+                return ResourceManager.GetString("ValidationRequiredFirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingrese su Apellido.
+        /// </summary>
+        public static string ValidationRequiredLastName {
+            get {
+                return ResourceManager.GetString("ValidationRequiredLastName", resourceCulture);
+            }
+        }
     }
 }

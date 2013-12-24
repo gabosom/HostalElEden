@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 using System.Web;
@@ -10,7 +11,9 @@ namespace HotelEden.Models
     {
         private Dictionary<string, int> _AddedRooms { get; set; }
 
+        [Required(ErrorMessageResourceName = "ValidationRequiredCheckInDate", ErrorMessageResourceType = typeof(SpanishResources))]
         public DateTime CheckInDate { get; set; }
+        [Required(ErrorMessageResourceName = "ValidationRequiredCheckOutDate", ErrorMessageResourceType = typeof(SpanishResources))]
         public DateTime CheckOutDate { get; set; }
 
         public int MatrimonialCount { get; set; }
