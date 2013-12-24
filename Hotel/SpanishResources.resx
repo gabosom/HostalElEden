@@ -273,4 +273,10 @@
   <data name="MenuGallery" xml:space="preserve">
     <value>Galeria</value>
   </data>
+  <data name="RoomDoubleSimpleMaxGuests" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RoomMatrimonialMaxGuests" xml:space="preserve">
+    <value>2</value>
+  </data>
 </root>

@@ -37,7 +37,7 @@
             }
 @*          @Html.DisplayFor(modelItem => item.MaxGuestNo)*@</td>
         <td class="priceColumn">
-            USD $@Html.DisplayFor(modelItem => item.Rate)
+            USD $@String.Format("{0:0.00}", item.Rate)
         </td>
         <td class="selectColumn">
             @Html.ActionLink(HotelEden.SpanishResources.RoomsSelectRoom, "Reserve", "Rooms", new { room=item.URL },null)

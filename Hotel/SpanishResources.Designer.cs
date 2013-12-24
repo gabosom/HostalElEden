@@ -295,6 +295,15 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 2.
+        /// </summary>
+        public static string RoomDoubleSimpleMaxGuests {
+            get {
+                return ResourceManager.GetString("RoomDoubleSimpleMaxGuests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MatrimonialAndDoubleSimple.
         /// </summary>
         public static string RoomMatrimonialAndDoubleSimpleKeyword {
@@ -318,6 +327,15 @@ namespace HotelEden {
         public static string RoomMatrimonialKeyword {
             get {
                 return ResourceManager.GetString("RoomMatrimonialKeyword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2.
+        /// </summary>
+        public static string RoomMatrimonialMaxGuests {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialMaxGuests", resourceCulture);
             }
         }
         

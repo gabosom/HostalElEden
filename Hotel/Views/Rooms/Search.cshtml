@@ -46,7 +46,7 @@
                     <span>@Html.Raw(item.Description)</span>
                 </td>
                 <td class="priceColumn">
-                    USD $@Html.DisplayFor(modelItem => item.Rate)
+                    USD $@String.Format("{0:0.00}", item.Rate)
                 </td>
                 <td class="maxGuestsColumn">
                     @{
