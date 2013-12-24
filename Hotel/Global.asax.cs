@@ -29,8 +29,8 @@ namespace HotelEden
 
             //adding DB initializer
             
-            Database.SetInitializer(new HotelContextInitializer());
-            Seeder.Seed();
+            //Database.SetInitializer(new HotelContextInitializer());
+            //Seeder.Seed();
         }
     }
 }
