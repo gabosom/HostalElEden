@@ -38,11 +38,15 @@ namespace HotelEden.Utils
         }
 
 
-        public void AddString(string s)
+        public void AddLine(string s)
+        {
+            this.StringsToAdd.Add(s + "<br/>");
+        }
+
+        public void AddHTML(string s)
         {
             this.StringsToAdd.Add(s);
         }
-
 
         public void SendEmail()
         {
@@ -63,7 +67,7 @@ namespace HotelEden.Utils
 
 
                 foreach (string s in this.StringsToAdd)
-                    email.Body += s + "<br />";
+                    email.Body += s;
                
                 client.SendMail(email);
                 Console.WriteLine("Email done: ");

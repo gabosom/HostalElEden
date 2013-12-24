@@ -115,13 +115,21 @@ namespace HotelEden.Models
         public DateTime CheckInDate { get; set; }
         [Required(ErrorMessageResourceName = "ValidationRequiredCheckOutDate", ErrorMessageResourceType = typeof(SpanishResources))]
         public DateTime CheckOutDate { get; set; }
-        public double TotalPrice { get; set; }
+        public double TotalPrice
+        {
+            get
+            {
+                double TotalAccum = 0;
+                foreach (RoomType room in this.ReservedRoomTypes)
+                    TotalAccum += room.Rate * this.NumNights;
+                return TotalAccum;
+            }
+        }
 
         public List<RoomType> ReservedRoomTypes { get; set; }
 
         public Reservation()
         {
-            this.TotalPrice = 0;
             this.ReservedRoomTypes = new List<RoomType>();
         }
         public void AddRoomToReservation(RoomType room)

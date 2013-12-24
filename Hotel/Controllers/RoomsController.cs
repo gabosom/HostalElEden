@@ -19,7 +19,6 @@ namespace HotelEden.Models
                 Reservation reservation = new Reservation();
                 reservation.CheckInDate = roomsCountDetails.CheckInDate;
                 reservation.CheckOutDate = roomsCountDetails.CheckOutDate;
-                reservation.TotalPrice = 0;
 
                 foreach(KeyValuePair<string, int> roomTypeCount in roomsCountDetails.GetSelectedRooms())
                 {
@@ -95,19 +94,21 @@ namespace HotelEden.Models
                 emailer.EmailSubject= "Reservacion de " + fullReservation.FirstName + " " + fullReservation.LastName;
 
                 //Detalles del cliente
-                emailer.AddString("Nombre: " + fullReservation.FirstName + " " + fullReservation.LastName);
-                emailer.AddString("Email: " + fullReservation.Email);
-                emailer.AddString("Fecha de Llegada: " + fullReservation.CheckInDate.ToShortDateString());
-                emailer.AddString("Fecha de Salida: " + fullReservation.CheckOutDate.ToShortDateString());
-                emailer.AddString("Numero de noches: " + fullReservation.NumNights);
-                emailer.AddString("Total de habitaciones: " + fullReservation.ReservedRoomTypes.Count);
+                emailer.AddLine("Nombre: " + fullReservation.FirstName + " " + fullReservation.LastName);
+                emailer.AddLine("Email: " + fullReservation.Email);
+                emailer.AddLine("Fecha de Llegada: " + fullReservation.CheckInDate.ToShortDateString());
+                emailer.AddLine("Fecha de Salida: " + fullReservation.CheckOutDate.ToShortDateString());
+                emailer.AddLine("Numero de noches: " + fullReservation.NumNights);
+                emailer.AddLine("Total de habitaciones: " + fullReservation.ReservedRoomTypes.Count);
+                emailer.AddHTML("<h3>Total: $" + fullReservation.TotalPrice + "</h3>");
 
                 int count = 1;
                 foreach(RoomType room in fullReservation.ReservedRoomTypes)
                 {
-                    emailer.AddString("<h3>Habitacion " + count++ + "</h3>");
-                    emailer.AddString("Tipo de habitacion: " + room.Title);
-                    emailer.AddString("Numero de huespedes: " + room.CurrentGuests);
+                    emailer.AddHTML("<h3>Habitacion " + count++ + "</h3>");
+                    emailer.AddLine("Tipo de habitacion: " + room.Title);
+                    emailer.AddLine("Numero de huespedes: " + room.CurrentGuests);
+                    emailer.AddHTML("<br/>");
                 }
 
                 emailer.SendEmail();
