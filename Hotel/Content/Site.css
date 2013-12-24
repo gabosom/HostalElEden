@@ -113,6 +113,7 @@ h5, h6 {
         /*background: url("../Images/accent.png") no-repeat;*/
         /*padding-left: 10px;*/
         padding-top: 30px;
+        padding-bottom:30px;
     }
 
     .featured + .main-content {

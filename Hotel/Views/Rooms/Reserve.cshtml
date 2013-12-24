@@ -74,7 +74,7 @@
                     Html.ActionLink(HotelEden.SpanishResources.RoomsSelectRoom, "Reserve", "Rooms", new { room = item.URL }, null)
                 </td>*@
             </tr>
-            <tr class="roomListItemBreak">
+            <tr class="roomListItemBreak lastBreak">
                 <td colspan="3">
                     <hr />
                 </td>
@@ -82,7 +82,7 @@
             
         }
 
-        <tr>
+        <tr class="totalRow">
             <td class="roomTitleColumn">
                 <h3>@HotelEden.SpanishResources.RoomsReserveTotal</h3>
             </td>

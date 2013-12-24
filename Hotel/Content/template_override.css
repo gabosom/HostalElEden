@@ -38,3 +38,5 @@
 
 /*** Reserve page */
 .reserveList td{padding-top:0px;}
+.reserveList .lastBreak hr{margin-bottom:0px;}
+.reserveList .totalRow{border:1px solid black}
