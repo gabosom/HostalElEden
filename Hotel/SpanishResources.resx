@@ -321,4 +321,7 @@
   <data name="RoomsValidateCount" xml:space="preserve">
     <value>Seleccione 1 habit. minimo</value>
   </data>
+  <data name="NightsLowercase" xml:space="preserve">
+    <value>noches</value>
+  </data>
 </root>

@@ -109,7 +109,7 @@ namespace HotelEden.Models
         [EmailAddress(ErrorMessageResourceName = "ValidationIncorrectEmail", ErrorMessageResourceType = typeof(SpanishResources), ErrorMessage = null)] //aha: http://stackoverflow.com/questions/12474876/either-errormessagestring-or-errormessageresourcename-must-be-set-but-not-both
         public string Email { get; set; }
         public DateTime ReservedDate { get; set; }
-        public int NumNights { get; set; }
+        public int NumNights { get { return this.CheckOutDate.Subtract(this.CheckInDate).Days; } }
         public int NumGuests { get; set; }
         [Required(ErrorMessageResourceName = "ValidationRequiredCheckInDate", ErrorMessageResourceType=typeof(SpanishResources))]
         public DateTime CheckInDate { get; set; }

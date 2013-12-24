@@ -151,6 +151,15 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to noches.
+        /// </summary>
+        public static string NightsLowercase {
+            get {
+                return ResourceManager.GetString("NightsLowercase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Llegada.
         /// </summary>
         public static string ReserveFormArrivalDate {

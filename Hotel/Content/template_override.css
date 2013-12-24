@@ -12,7 +12,8 @@
 .roomListItem h3{margin:0px;}
 .roomListItem .roomTitleColumn{padding:0px 10px 0px 10px;}
 .roomListItem .roomThumbColumn{width:150px;padding-top:0em;}
-.roomListItem .priceColumn{width:100px; font-weight:bold; font-size:1.1em;}
+.roomListItem .priceColumn, .totalRow .priceColumn{width:100px; font-weight:bold; font-size:1.1em;}
+.roomListItem .priceColumn .costDetails{font-size:.8em; font-weight:normal;margin-top:10px}
 .roomListItem .maxGuestsColumn{width:65px}
 .roomListItem .selectColumn{width:100px;}
 .roomListItem .selectColumn a, .RoomsSelectRoom{
@@ -41,9 +42,14 @@
 
 /*** Reserve page */
 .reserveList td{padding-top:0px;}
-.reserveList .lastBreak hr{margin-bottom:0px;}
-.reserveList .totalRow{border:1px solid black}
+.reserveList .lastBreak hr{margin-bottom:0px; border-bottom:none;}
+.reserveList .totalRow{background-color:#5C3317;}
+.reserveList .totalRow .roomTitleColumn h3{padding-right:5px; padding-left:5px; margin-top:0px;color:#fff554; font-size:1.5em; font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif; font-weight:normal;}
 
 
 /*** Home page reservation*/
 .homeReservation .validation-summary-errors ul{margin-top:0px; margin-bottom:0px;}
+
+
+/*** General   */
+.yellowHeader{ color:#fff554; font-size:1.5em; font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif; font-weight:normal;}

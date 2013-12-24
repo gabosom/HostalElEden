@@ -19,7 +19,6 @@ namespace HotelEden.Models
                 Reservation reservation = new Reservation();
                 reservation.CheckInDate = roomsCountDetails.CheckInDate;
                 reservation.CheckOutDate = roomsCountDetails.CheckOutDate;
-                reservation.NumNights = reservation.CheckOutDate.Subtract(reservation.CheckInDate).Days;
                 reservation.TotalPrice = 0;
 
                 foreach(KeyValuePair<string, int> roomTypeCount in roomsCountDetails.GetSelectedRooms())
@@ -89,7 +88,6 @@ namespace HotelEden.Models
                 foreach (RoomType roomType in fullReservation.ReservedRoomTypes)
                     roomType.CompletePropertiesFromKeyword();
 
-                fullReservation.NumNights = fullReservation.CheckOutDate.Subtract(fullReservation.CheckInDate).Days;
 
                 //mandar email al hostal con la reservacion
                 Emailer emailer = new Emailer();

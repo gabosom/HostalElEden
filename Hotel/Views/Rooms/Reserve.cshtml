@@ -15,8 +15,8 @@
     <table class="roomList reserveList">
         <tr>
             <th></th>
-            <th>@HotelEden.SpanishResources.RoomsCostColumn</th>
             <th>@HotelEden.SpanishResources.RoomsReservePeoplePerRoom</th>
+            <th>@*@HotelEden.SpanishResources.RoomsCostColumn*@</th>
             @*<th>@HotelEden.SpanishResources.RoomsReserveTotalColumn</th>*@
         </tr>
         <tr class="roomListItemBreak">
@@ -29,7 +29,7 @@
         @foreach (var item in Model.ReservedRoomTypes)
         {
             
-            total += item.Rate;
+            
                 
             <tr class="roomListItem">
 
@@ -48,9 +48,7 @@
                         }
                     </div>
                 </td>
-                <td class="priceColumn">
-                    USD $@String.Format("{0:0.00}", item.Rate)
-                </td>
+                
                 <td class="maxGuestsColumn">
                     @{
                         var fieldCountName = "ReservedRoomTypes["+currentRoomCount+"].CurrentGuests";
@@ -69,6 +67,16 @@
                         }
                     </select>
                 </td>
+                <td class="priceColumn">
+                    @{
+                        double totalForRoom = item.Rate * Model.NumNights;
+                        total += totalForRoom;
+                    }
+                    USD $@String.Format("{0:0.00}", totalForRoom)
+                    <div class="costDetails">
+                        $@String.Format("{0:0.00}", item.Rate) X @Model.NumNights @HotelEden.SpanishResources.NightsLowercase
+                    </div>
+                </td>
                 @{currentRoomCount++;}
                 @*<td class="selectColumn">
                     Html.ActionLink(HotelEden.SpanishResources.RoomsSelectRoom, "Reserve", "Rooms", new { room = item.URL }, null)
@@ -86,8 +94,9 @@
             <td class="roomTitleColumn">
                 <h3>@HotelEden.SpanishResources.RoomsReserveTotal</h3>
             </td>
-            <td colspan="2">
-                $@String.Format("{0:0.00}", total)
+            <td></td>
+            <td class="priceColumn yellowHeader">
+                USD $@String.Format("{0:0.00}", total)
             </td>
             
             @*<td><input class="RoomsSelectRoom" type="submit" value="@HotelEden.SpanishResources.RoomsSelectRoom" /></td>*@
