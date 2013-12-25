@@ -70,6 +70,15 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Galeria.
+        /// </summary>
+        public static string GalleryTitle {
+            get {
+                return ResourceManager.GetString("GalleryTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;p&gt;Contamos con habitaciones simples, dobles, triples y cuadruples con banio privado. Las habitaciones son amplias, cuentan con television y cable y proveemos WiFi.&lt;/p&gt;&lt;p&gt;El hotel se encuentra en medio de Banios a pocos pasos de todas las atracciones turisticas.&lt;/p&gt;&lt;p&gt;Nuestro personal puede guiarlos en opciones y lugares disponibles para realizar paseos en bicicleta o motocicleta, canoas, rafting o actividades relajantes,.
         /// </summary>
         public static string HomeAmenitiesDetails {

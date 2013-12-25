@@ -330,4 +330,7 @@
   <data name="SuccessTitle" xml:space="preserve">
     <value>Solicitud Enviada</value>
   </data>
+  <data name="GalleryTitle" xml:space="preserve">
+    <value>Galeria</value>
+  </data>
 </root>

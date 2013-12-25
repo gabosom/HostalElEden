@@ -15,6 +15,11 @@ namespace HotelEden.Models
         {
         }
 
+        public ActionResult Gallery()
+        {
+            return View();
+        }
+
         public HomeController(IReservationRepository reservationRepository)
         {
             this._reservationRepository = reservationRepository;

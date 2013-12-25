@@ -18,6 +18,11 @@ namespace HotelEden
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery.validate*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/galleryView").Include(
+                        "~/Scripts/jquery.timers-1.2.js",
+                        "~/Scripts/jquery.easing.1.3.js",
+                        "~/Scripts/jquery.galleryview-3.0-dev.js"));
+
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
