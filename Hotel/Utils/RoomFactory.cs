@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Resources;
 using System.Web;
 
 namespace HotelEden.Utils
@@ -19,9 +20,42 @@ namespace HotelEden.Utils
             return rooms;
         }
 
+        private static string GetStringForRoom(string key)
+        {
+            try
+            {
+                var res = new ResourceManager(typeof(SpanishResources));
+                return res.GetString(key);
+            }
+            catch(Exception e)
+            {
+                //todo:catch 
+                return "NO STRING FOR KEY: " + key;
+            }
+        }
+
         public static RoomType GetSpecificRoomType(RoomTypes enumValue)
         {
-            switch(enumValue)
+            var res = new ResourceManager(typeof(SpanishResources));
+            string enumString = enumValue.ToString();
+
+            return new RoomType
+            {
+                Id = 1,
+                Description = RoomFactory.GetStringForRoom(enumString + "Description"),
+                Title = RoomFactory.GetStringForRoom(enumString + "Title"),
+                MaxGuestNo = Convert.ToInt32(RoomFactory.GetStringForRoom(enumString + "MaxGuests")),
+                Rate = Convert.ToDouble(SpanishResources.RoomMatrimonialMaxGuests) * Settings.CostPerPerson,
+                ShortDescription = RoomFactory.GetStringForRoom(enumString + "ShortDescription"),
+                URL = RoomFactory.GetStringForRoom(enumString + "URL"),
+                ImageURL = RoomFactory.GetStringForRoom(enumString + "ImageURL"),
+                ThumbURL = RoomFactory.GetStringForRoom(enumString + "ThumbURL"),
+                Keyword = RoomFactory.GetStringForRoom(enumString + "Keyword")
+            };
+
+            #region oldmanual way
+            /*
+            switch (enumValue)
             {
                 case RoomTypes.Matrimonial:
                     {
@@ -157,8 +191,10 @@ namespace HotelEden.Utils
                     }
 
             }
-                
-                
+             * */
+            #endregion
+
+
         }
 
         public static RoomType GetSpecificRoomType(string p)
