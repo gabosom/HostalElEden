@@ -339,6 +339,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\Maps.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -387,6 +388,7 @@
     <Content Include="Views\Rooms\Search.cshtml" />
     <Content Include="Views\Rooms\TestEditView.cshtml" />
     <Content Include="Views\Rooms\Success.cshtml" />
+    <Content Include="Views\Shared\Location.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

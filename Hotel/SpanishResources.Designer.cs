@@ -628,6 +628,24 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;p&gt;Se ha enviado la solicitud y uno de nuestros representantes se pondra en contacto pronto con usted para finalizar la reservacion.,&lt;/p&gt;&lt;p&gt;Recomendamos que lea la seccion de Banos para que se familiarize con las acrividades que puede hacer aca. &lt;/p&gt;&lt;p&gt;Lo vemos pronto!&lt;/p&gt;.
+        /// </summary>
+        public static string SuccessDetails {
+            get {
+                return ResourceManager.GetString("SuccessDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Solicitud Enviada.
+        /// </summary>
+        public static string SuccessTitle {
+            get {
+                return ResourceManager.GetString("SuccessTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ingrese un email correcto.
         /// </summary>
         public static string ValidationIncorrectEmail {
