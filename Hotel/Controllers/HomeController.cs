@@ -1,4 +1,5 @@
-﻿using HotelEden.Models;
+using HotelEden.Models;
+using HotelEden.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,11 +38,38 @@ namespace HotelEden.Models
             return View();
         }
 
+        [HttpGet]
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            
+            return View();
+        }
 
+        [HttpPost]
+        public ActionResult Contact(ContactViewModel contact)
+        {
+            if(ModelState.IsValid)
+            {
+                try
+                {
+                    Emailer commentEmail = new Emailer();
+                    commentEmail.AddToDestinatary(Settings.HostalEmail);
+                    commentEmail.EmailSubject = "Comentario de: " + contact.Name;
+                    commentEmail.AddLine("Nombre: " + contact.Name);
+                    commentEmail.AddLine("Email: " + contact.Email);
+                    commentEmail.AddLine("Commentario");
+                    commentEmail.AddLine(contact.Comment);
+                    commentEmail.SendEmail();
+
+                    ViewBag.CommentSent = true;
+                }
+                catch(Exception e)
+                {
+                    //todo: catch exception
+                }
+            }
             return View();
         }
     }
 }
+

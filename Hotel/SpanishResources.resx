@@ -333,4 +333,22 @@
   <data name="GalleryTitle" xml:space="preserve">
     <value>Galeria</value>
   </data>
+  <data name="ContactDescription" xml:space="preserve">
+    <value>Estamos a su disposicion para cualquier duda o comentario. Puede contactarnos por email a gabosom@gmail.com o llene la forma y responderemos lo mas pronto posible.</value>
+  </data>
+  <data name="ContactFormTitle" xml:space="preserve">
+    <value>Pregunta o Comentario</value>
+  </data>
+  <data name="ContactSubmit" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="ContactFormName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="ContactSentDetails" xml:space="preserve">
+    <value>Se ha enviado la informacion exitosamente. Nos pondremos en contacto pronto.</value>
+  </data>
 </root>

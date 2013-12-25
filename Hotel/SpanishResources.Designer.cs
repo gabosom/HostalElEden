@@ -61,6 +61,60 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Estamos a su disposicion para cualquier duda o comentario. Puede contactarnos por email a gabosom@gmail.com o llene la forma y responderemos lo mas pronto posible..
+        /// </summary>
+        public static string ContactDescription {
+            get {
+                return ResourceManager.GetString("ContactDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nombre.
+        /// </summary>
+        public static string ContactFormName {
+            get {
+                return ResourceManager.GetString("ContactFormName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pregunta o Comentario.
+        /// </summary>
+        public static string ContactFormTitle {
+            get {
+                return ResourceManager.GetString("ContactFormTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Se ha enviado la informacion exitosamente. Nos pondremos en contacto pronto..
+        /// </summary>
+        public static string ContactSentDetails {
+            get {
+                return ResourceManager.GetString("ContactSentDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enviar.
+        /// </summary>
+        public static string ContactSubmit {
+            get {
+                return ResourceManager.GetString("ContactSubmit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contacto.
+        /// </summary>
+        public static string ContactTitle {
+            get {
+                return ResourceManager.GetString("ContactTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Jorge Gabuardi.
         /// </summary>
         public static string FooterAuthor {
