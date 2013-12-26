@@ -331,11 +331,20 @@ namespace HotelEden {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RoomPictures/gallery-3.jpg.
+        ///   Looks up a localized string similar to DoubleMatrimonial desc.
         /// </summary>
-        public static string RoomDoubleImageURL {
+        public static string RoomDoubleMatrimonialDescription {
             get {
-                return ResourceManager.GetString("RoomDoubleImageURL", resourceCulture);
+                return ResourceManager.GetString("RoomDoubleMatrimonialDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        /// </summary>
+        public static string RoomDoubleMatrimonialImageURL {
+            get {
+                return ResourceManager.GetString("RoomDoubleMatrimonialImageURL", resourceCulture);
             }
         }
         
@@ -349,11 +358,74 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 4.
+        /// </summary>
+        public static string RoomDoubleMatrimonialMaxGuests {
+            get {
+                return ResourceManager.GetString("RoomDoubleMatrimonialMaxGuests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DoubleMatrimonial short@.
+        /// </summary>
+        public static string RoomDoubleMatrimonialShortDescription {
+            get {
+                return ResourceManager.GetString("RoomDoubleMatrimonialShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        /// </summary>
+        public static string RoomDoubleMatrimonialThumbURL {
+            get {
+                return ResourceManager.GetString("RoomDoubleMatrimonialThumbURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 matrimoniales.
+        /// </summary>
+        public static string RoomDoubleMatrimonialTitle {
+            get {
+                return ResourceManager.GetString("RoomDoubleMatrimonialTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DoubleMatrimonial.
+        /// </summary>
+        public static string RoomDoubleMatrimonialURL {
+            get {
+                return ResourceManager.GetString("RoomDoubleMatrimonialURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string RoomDoubleMaxGuests {
             get {
                 return ResourceManager.GetString("RoomDoubleMaxGuests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Descripcion double single.
+        /// </summary>
+        public static string RoomDoubleSimpleDescription {
+            get {
+                return ResourceManager.GetString("RoomDoubleSimpleDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-2.jpg.
+        /// </summary>
+        public static string RoomDoubleSimpleImageURL {
+            get {
+                return ResourceManager.GetString("RoomDoubleSimpleImageURL", resourceCulture);
             }
         }
         
@@ -376,6 +448,69 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 22.4.
+        /// </summary>
+        public static string RoomDoubleSimpleRate {
+            get {
+                return ResourceManager.GetString("RoomDoubleSimpleRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Short desc shortsimpoe.
+        /// </summary>
+        public static string RoomDoubleSimpleShortDescription {
+            get {
+                return ResourceManager.GetString("RoomDoubleSimpleShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-2.jpg.
+        /// </summary>
+        public static string RoomDoubleSimpleThumbURL {
+            get {
+                return ResourceManager.GetString("RoomDoubleSimpleThumbURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 camas sencillas.
+        /// </summary>
+        public static string RoomDoubleSimpleTitle {
+            get {
+                return ResourceManager.GetString("RoomDoubleSimpleTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to doublesimple.
+        /// </summary>
+        public static string RoomDoubleSimpleURL {
+            get {
+                return ResourceManager.GetString("RoomDoubleSimpleURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MatrimonialAndDoubleSimple description.
+        /// </summary>
+        public static string RoomMatrimonialAndDoubleSimpleDescription {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndDoubleSimpleDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        /// </summary>
+        public static string RoomMatrimonialAndDoubleSimpleImageURL {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndDoubleSimpleImageURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MatrimonialAndDoubleSimple.
         /// </summary>
         public static string RoomMatrimonialAndDoubleSimpleKeyword {
@@ -385,11 +520,137 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 4.
+        /// </summary>
+        public static string RoomMatrimonialAndDoubleSimpleMaxGuests {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndDoubleSimpleMaxGuests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MatrimonialAndDoubleSimple short desc.
+        /// </summary>
+        public static string RoomMatrimonialAndDoubleSimpleShortDescription {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndDoubleSimpleShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        /// </summary>
+        public static string RoomMatrimonialAndDoubleSimpleThumbURL {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndDoubleSimpleThumbURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 matrimonial y 2 sencillas.
+        /// </summary>
+        public static string RoomMatrimonialAndDoubleSimpleTitle {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndDoubleSimpleTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MatrimonialAndDoubleSimple.
+        /// </summary>
+        public static string RoomMatrimonialAndDoubleSimpleURL {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndDoubleSimpleURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mat and simple desc.
+        /// </summary>
+        public static string RoomMatrimonialAndSimpleDescription {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndSimpleDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        /// </summary>
+        public static string RoomMatrimonialAndSimpleImageURL {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndSimpleImageURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MatrimonialAndSimple.
         /// </summary>
         public static string RoomMatrimonialAndSimpleKeyword {
             get {
                 return ResourceManager.GetString("RoomMatrimonialAndSimpleKeyword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3.
+        /// </summary>
+        public static string RoomMatrimonialAndSimpleMaxGuests {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndSimpleMaxGuests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MatrimonialAndSimple short desc.
+        /// </summary>
+        public static string RoomMatrimonialAndSimpleShortDescription {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndSimpleShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        /// </summary>
+        public static string RoomMatrimonialAndSimpleThumbURL {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndSimpleThumbURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 matrimonial y 1 sencillas.
+        /// </summary>
+        public static string RoomMatrimonialAndSimpleTitle {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndSimpleTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MatrimonialAndSimple.
+        /// </summary>
+        public static string RoomMatrimonialAndSimpleURL {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialAndSimpleURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Descripcion sencilla!.
+        /// </summary>
+        public static string RoomMatrimonialDescription {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-1.jpg.
+        /// </summary>
+        public static string RoomMatrimonialImageURL {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialImageURL", resourceCulture);
             }
         }
         
@@ -412,6 +673,51 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 6.50.
+        /// </summary>
+        public static string RoomMatrimonialRate {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Very short description single!&lt;ul&gt;&lt;li&gt;test&lt;/li&gt;&lt;/ul&gt;.
+        /// </summary>
+        public static string RoomMatrimonialShortDescription {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-1.jpg.
+        /// </summary>
+        public static string RoomMatrimonialThumbURL {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialThumbURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 matrimonial.
+        /// </summary>
+        public static string RoomMatrimonialTitle {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Single.
+        /// </summary>
+        public static string RoomMatrimonialURL {
+            get {
+                return ResourceManager.GetString("RoomMatrimonialURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to RoomPictures/gallery-7.jpg.
         /// </summary>
         public static string RoomQuadrupleIURL {
@@ -430,11 +736,74 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to  QuadrupleSimple desc.
+        /// </summary>
+        public static string RoomQuadrupleSimpleDescription {
+            get {
+                return ResourceManager.GetString("RoomQuadrupleSimpleDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        /// </summary>
+        public static string RoomQuadrupleSimpleImageURL {
+            get {
+                return ResourceManager.GetString("RoomQuadrupleSimpleImageURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to QuadrupleSimple.
         /// </summary>
         public static string RoomQuadrupleSimpleKeyword {
             get {
                 return ResourceManager.GetString("RoomQuadrupleSimpleKeyword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4.
+        /// </summary>
+        public static string RoomQuadrupleSimpleMaxGuests {
+            get {
+                return ResourceManager.GetString("RoomQuadrupleSimpleMaxGuests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  QuadrupleSimple short.
+        /// </summary>
+        public static string RoomQuadrupleSimpleShortDescription {
+            get {
+                return ResourceManager.GetString("RoomQuadrupleSimpleShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        /// </summary>
+        public static string RoomQuadrupleSimpleThumbURL {
+            get {
+                return ResourceManager.GetString("RoomQuadrupleSimpleThumbURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 simples.
+        /// </summary>
+        public static string RoomQuadrupleSimpleTitle {
+            get {
+                return ResourceManager.GetString("RoomQuadrupleSimpleTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QuadrupleSimple.
+        /// </summary>
+        public static string RoomQuadrupleSimpleURL {
+            get {
+                return ResourceManager.GetString("RoomQuadrupleSimpleURL", resourceCulture);
             }
         }
         
@@ -462,87 +831,6 @@ namespace HotelEden {
         public static string RoomsCountColumn {
             get {
                 return ResourceManager.GetString("RoomsCountColumn", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Descripcion sencilla!.
-        /// </summary>
-        public static string RoomSingleDescription {
-            get {
-                return ResourceManager.GetString("RoomSingleDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to RoomPictures/gallery-1.jpg.
-        /// </summary>
-        public static string RoomSingleImageURL {
-            get {
-                return ResourceManager.GetString("RoomSingleImageURL", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Single.
-        /// </summary>
-        public static string RoomSingleKeyword {
-            get {
-                return ResourceManager.GetString("RoomSingleKeyword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 2.
-        /// </summary>
-        public static string RoomSingleMaxGuests {
-            get {
-                return ResourceManager.GetString("RoomSingleMaxGuests", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 6.50.
-        /// </summary>
-        public static string RoomSingleRate {
-            get {
-                return ResourceManager.GetString("RoomSingleRate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Very short description single!&lt;ul&gt;&lt;li&gt;test&lt;/li&gt;&lt;/ul&gt;.
-        /// </summary>
-        public static string RoomSingleShortDescription {
-            get {
-                return ResourceManager.GetString("RoomSingleShortDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to RoomPictures/gallery-1_thumb.jpg.
-        /// </summary>
-        public static string RoomSingleThumbURL {
-            get {
-                return ResourceManager.GetString("RoomSingleThumbURL", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Habitacion Sencilla.
-        /// </summary>
-        public static string RoomSingleTitle {
-            get {
-                return ResourceManager.GetString("RoomSingleTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Single.
-        /// </summary>
-        public static string RoomSingleURL {
-            get {
-                return ResourceManager.GetString("RoomSingleURL", resourceCulture);
             }
         }
         
@@ -637,11 +925,83 @@ namespace HotelEden {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TripleSimple desc.
+        /// </summary>
+        public static string RoomTripleSimpleDescription {
+            get {
+                return ResourceManager.GetString("RoomTripleSimpleDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        /// </summary>
+        public static string RoomTripleSimpleImageURL {
+            get {
+                return ResourceManager.GetString("RoomTripleSimpleImageURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TripleSimple.
         /// </summary>
         public static string RoomTripleSimpleKeyword {
             get {
                 return ResourceManager.GetString("RoomTripleSimpleKeyword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3.
+        /// </summary>
+        public static string RoomTripleSimpleMaxGuests {
+            get {
+                return ResourceManager.GetString("RoomTripleSimpleMaxGuests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Triple simple short description.
+        /// </summary>
+        public static string RoomTripleSimpleShortDescriptiin {
+            get {
+                return ResourceManager.GetString("RoomTripleSimpleShortDescriptiin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TripleSimple short desc.
+        /// </summary>
+        public static string RoomTripleSimpleShortDescription {
+            get {
+                return ResourceManager.GetString("RoomTripleSimpleShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        /// </summary>
+        public static string RoomTripleSimpleThumbURL {
+            get {
+                return ResourceManager.GetString("RoomTripleSimpleThumbURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3 sencillas.
+        /// </summary>
+        public static string RoomTripleSimpleTitle {
+            get {
+                return ResourceManager.GetString("RoomTripleSimpleTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TripleSimple.
+        /// </summary>
+        public static string RoomTripleSimpleURL {
+            get {
+                return ResourceManager.GetString("RoomTripleSimpleURL", resourceCulture);
             }
         }
         

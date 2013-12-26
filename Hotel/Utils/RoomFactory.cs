@@ -37,15 +37,15 @@ namespace HotelEden.Utils
         public static RoomType GetSpecificRoomType(RoomTypes enumValue)
         {
             var res = new ResourceManager(typeof(SpanishResources));
-            string enumString = enumValue.ToString();
+            string enumString = "Room"+enumValue.ToString();
 
             return new RoomType
-            {
+            {   
                 Id = 1,
                 Description = RoomFactory.GetStringForRoom(enumString + "Description"),
                 Title = RoomFactory.GetStringForRoom(enumString + "Title"),
                 MaxGuestNo = Convert.ToInt32(RoomFactory.GetStringForRoom(enumString + "MaxGuests")),
-                Rate = Convert.ToDouble(SpanishResources.RoomMatrimonialMaxGuests) * Settings.CostPerPerson,
+                Rate = Convert.ToDouble(RoomFactory.GetStringForRoom(enumString + "MaxGuests")) * Settings.CostPerPerson,
                 ShortDescription = RoomFactory.GetStringForRoom(enumString + "ShortDescription"),
                 URL = RoomFactory.GetStringForRoom(enumString + "URL"),
                 ImageURL = RoomFactory.GetStringForRoom(enumString + "ImageURL"),

@@ -123,9 +123,6 @@
   <data name="MenuRooms" xml:space="preserve">
     <value>Habitaciones</value>
   </data>
-  <data name="RoomDoubleImageURL" xml:space="preserve">
-    <value>RoomPictures/gallery-3.jpg</value>
-  </data>
   <data name="RoomDoubleMaxGuests" xml:space="preserve">
     <value>2</value>
   </data>
@@ -135,28 +132,25 @@
   <data name="RoomQuadrupleMaxGuests" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="RoomSingleDescription" xml:space="preserve">
+  <data name="RoomMatrimonialDescription" xml:space="preserve">
     <value>Descripcion sencilla!</value>
   </data>
-  <data name="RoomSingleImageURL" xml:space="preserve">
+  <data name="RoomMatrimonialImageURL" xml:space="preserve">
     <value>RoomPictures/gallery-1.jpg</value>
   </data>
-  <data name="RoomSingleMaxGuests" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="RoomSingleRate" xml:space="preserve">
+  <data name="RoomMatrimonialRate" xml:space="preserve">
     <value>6.50</value>
   </data>
-  <data name="RoomSingleShortDescription" xml:space="preserve">
+  <data name="RoomMatrimonialShortDescription" xml:space="preserve">
     <value>Very short description single!&lt;ul&gt;&lt;li&gt;test&lt;/li&gt;&lt;/ul&gt;</value>
   </data>
-  <data name="RoomSingleThumbURL" xml:space="preserve">
-    <value>RoomPictures/gallery-1_thumb.jpg</value>
+  <data name="RoomMatrimonialThumbURL" xml:space="preserve">
+    <value>RoomPictures/gallery-1.jpg</value>
   </data>
-  <data name="RoomSingleTitle" xml:space="preserve">
-    <value>Habitacion Sencilla</value>
+  <data name="RoomMatrimonialTitle" xml:space="preserve">
+    <value>1 matrimonial</value>
   </data>
-  <data name="RoomSingleURL" xml:space="preserve">
+  <data name="RoomMatrimonialURL" xml:space="preserve">
     <value>Single</value>
   </data>
   <data name="RoomsPageDescription" xml:space="preserve">
@@ -206,9 +200,6 @@
   </data>
   <data name="ReservePageDescription" xml:space="preserve">
     <value>Reservar por email porque????</value>
-  </data>
-  <data name="RoomSingleKeyword" xml:space="preserve">
-    <value>Single</value>
   </data>
   <data name="RoomDoubleMatrimonialKeyword" xml:space="preserve">
     <value>DoubleMatrimonial</value>
@@ -350,5 +341,134 @@
   </data>
   <data name="ContactSentDetails" xml:space="preserve">
     <value>Se ha enviado la informacion exitosamente. Nos pondremos en contacto pronto.</value>
+  </data>
+  <data name="RoomDoubleMatrimonialDescription" xml:space="preserve">
+    <value>DoubleMatrimonial desc</value>
+  </data>
+  <data name="RoomDoubleMatrimonialImageURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomDoubleMatrimonialMaxGuests" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RoomDoubleMatrimonialShortDescription" xml:space="preserve">
+    <value>DoubleMatrimonial short@</value>
+  </data>
+  <data name="RoomDoubleMatrimonialThumbURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomDoubleMatrimonialTitle" xml:space="preserve">
+    <value>2 matrimoniales</value>
+  </data>
+  <data name="RoomDoubleMatrimonialURL" xml:space="preserve">
+    <value>DoubleMatrimonial</value>
+  </data>
+  <data name="RoomDoubleSimpleDescription" xml:space="preserve">
+    <value>Descripcion double single</value>
+  </data>
+  <data name="RoomDoubleSimpleImageURL" xml:space="preserve">
+    <value>RoomPictures/gallery-2.jpg</value>
+  </data>
+  <data name="RoomDoubleSimpleRate" xml:space="preserve">
+    <value>22.4</value>
+  </data>
+  <data name="RoomDoubleSimpleShortDescription" xml:space="preserve">
+    <value>Short desc shortsimpoe</value>
+  </data>
+  <data name="RoomDoubleSimpleThumbURL" xml:space="preserve">
+    <value>RoomPictures/gallery-2.jpg</value>
+  </data>
+  <data name="RoomDoubleSimpleTitle" xml:space="preserve">
+    <value>2 camas sencillas</value>
+  </data>
+  <data name="RoomDoubleSimpleURL" xml:space="preserve">
+    <value>doublesimple</value>
+  </data>
+  <data name="RoomMatrimonialAndDoubleSimpleDescription" xml:space="preserve">
+    <value>MatrimonialAndDoubleSimple description</value>
+  </data>
+  <data name="RoomMatrimonialAndDoubleSimpleImageURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomMatrimonialAndDoubleSimpleMaxGuests" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RoomMatrimonialAndDoubleSimpleShortDescription" xml:space="preserve">
+    <value>MatrimonialAndDoubleSimple short desc</value>
+  </data>
+  <data name="RoomMatrimonialAndDoubleSimpleThumbURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomMatrimonialAndDoubleSimpleTitle" xml:space="preserve">
+    <value>1 matrimonial y 2 sencillas</value>
+  </data>
+  <data name="RoomMatrimonialAndDoubleSimpleURL" xml:space="preserve">
+    <value>MatrimonialAndDoubleSimple</value>
+  </data>
+  <data name="RoomMatrimonialAndSimpleDescription" xml:space="preserve">
+    <value>Mat and simple desc</value>
+  </data>
+  <data name="RoomMatrimonialAndSimpleImageURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomMatrimonialAndSimpleMaxGuests" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RoomMatrimonialAndSimpleShortDescription" xml:space="preserve">
+    <value>MatrimonialAndSimple short desc</value>
+  </data>
+  <data name="RoomMatrimonialAndSimpleThumbURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomMatrimonialAndSimpleTitle" xml:space="preserve">
+    <value>1 matrimonial y 1 sencillas</value>
+  </data>
+  <data name="RoomMatrimonialAndSimpleURL" xml:space="preserve">
+    <value>MatrimonialAndSimple</value>
+  </data>
+  <data name="RoomQuadrupleSimpleDescription" xml:space="preserve">
+    <value> QuadrupleSimple desc</value>
+  </data>
+  <data name="RoomQuadrupleSimpleImageURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomQuadrupleSimpleMaxGuests" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RoomQuadrupleSimpleShortDescription" xml:space="preserve">
+    <value> QuadrupleSimple short</value>
+  </data>
+  <data name="RoomQuadrupleSimpleThumbURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomQuadrupleSimpleTitle" xml:space="preserve">
+    <value>4 simples</value>
+  </data>
+  <data name="RoomQuadrupleSimpleURL" xml:space="preserve">
+    <value>QuadrupleSimple</value>
+  </data>
+  <data name="RoomTripleSimpleDescription" xml:space="preserve">
+    <value>TripleSimple desc</value>
+  </data>
+  <data name="RoomTripleSimpleImageURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomTripleSimpleMaxGuests" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RoomTripleSimpleShortDescriptiin" xml:space="preserve">
+    <value>Triple simple short description</value>
+  </data>
+  <data name="RoomTripleSimpleShortDescription" xml:space="preserve">
+    <value>TripleSimple short desc</value>
+  </data>
+  <data name="RoomTripleSimpleThumbURL" xml:space="preserve">
+    <value>RoomPictures/gallery-4.jpg</value>
+  </data>
+  <data name="RoomTripleSimpleTitle" xml:space="preserve">
+    <value>3 sencillas</value>
+  </data>
+  <data name="RoomTripleSimpleURL" xml:space="preserve">
+    <value>TripleSimple</value>
   </data>
 </root>
