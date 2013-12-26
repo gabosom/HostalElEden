@@ -67,14 +67,14 @@
                         }
                     </select>
                 </td>
-                <td class="priceColumn">
+                <td class="priceColumn" data-rate="@item.Rate">
                     @{
                         double totalForRoom = item.Rate * Model.NumNights;
                         total += totalForRoom;
                     }
-                    USD $@String.Format("{0:0.00}", totalForRoom)
+                    USD $<span data-info="totalRoom">@String.Format("{0:0.00}", totalForRoom)</span>
                     <div class="costDetails">
-                        $@String.Format("{0:0.00}", item.Rate) X @Model.NumNights @HotelEden.SpanishResources.NightsLowercase
+                        $<span data-info="ratePerNight">@String.Format("{0:0.00}", item.Rate)</span> X <span data-info="numNights">@Model.NumNights</span> @HotelEden.SpanishResources.NightsLowercase
                     </div>
                 </td>
                 @{currentRoomCount++;}
@@ -96,7 +96,7 @@
             </td>
             <td></td>
             <td class="priceColumn yellowHeader">
-                USD $@String.Format("{0:0.00}", total)
+                USD $<span data-info="totalRes">@String.Format("{0:0.00}", total)</span>
             </td>
             
             @*<td><input class="RoomsSelectRoom" type="submit" value="@HotelEden.SpanishResources.RoomsSelectRoom" /></td>*@
@@ -189,6 +189,7 @@
             minDate: new Date(),
             onClose: function (selectedDate) {
                 $("#CheckOutDate").datepicker("option", "minDate", selectedDate);
+                UpdateTotals();
             }
         });
         $("#CheckOutDate").datepicker({
@@ -197,8 +198,39 @@
             changeMonth: true,
             buttonImage: "/Images/Resources/calendar.gif",
             buttonImageOnly: true,
-            numberOfMonths: 2
+            numberOfMonths: 2,
+            onClose: function (selectedDate) {
+                UpdateTotals();
+            }
         });
+
+       
     });
+
+    function UpdateTotals()
+    {
+        checkInDate = new Date($("#CheckInDate").val())
+        checkOutDate = new Date($("#CheckOutDate").val())
+        one_day = 1000 * 60 * 60 * 24
+
+        numNights = Math.ceil((checkOutDate.getTime() - checkInDate.getTime()) / one_day)
+
+        newTotal = 0;
+
+        //update room totals
+        $(".roomListItem").each(function (i) {
+            roomRate = $(this).children(".priceColumn").attr("data-rate");
+            newRoomTotal = (roomRate * numNights);
+            newTotal += newRoomTotal;
+
+            $(this).find(".priceColumn > .costDetails > span[data-info='numNights']").text(numNights);
+
+            $(this).find(".priceColumn > span[data-info='totalRoom']").text(newRoomTotal.toFixed(2));
+        });
+
+        //update total res cost
+        $(".totalRow > .priceColumn > span[data-info='totalRes']").text(newTotal.toFixed(2));
+
+    }
     </script>
 }
