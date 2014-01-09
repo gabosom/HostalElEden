@@ -1,0 +1,68 @@
+﻿@using HotelEden.Models;
+@{
+    ViewBag.Title = "Banos";
+
+    List<AttractionViewModel> thingsToDo = new List<AttractionViewModel>
+    {
+        new AttractionViewModel{
+            Title = "Paseos en caballo",
+            ImageURL = "RoomPictures/gallery-2.jpg",
+            Description = "Paseos en caballo son lo mejor"
+        },
+        new AttractionViewModel{
+            Title = "Ziplining",
+            ImageURL = "RoomPictures/gallery-2.jpg",
+            Description = "hay muchos lugares"
+        },
+        new AttractionViewModel{
+            Title = "Recorrer Banos es moto o go-kart",
+            ImageURL = "RoomPictures/gallery-2.jpg",
+            Description = "Paseos en caballo son lo mejor"
+        }
+        ,new AttractionViewModel{
+            Title = "Rafting",
+            ImageURL = "RoomPictures/gallery-2.jpg",
+            Description = "si hay por aqui"
+        }
+        ,new AttractionViewModel{
+            Title = "Recorrer Banos es moto o go-kart",
+            ImageURL = "RoomPictures/gallery-2.jpg",
+            Description = "Paseos en caballo son lo mejor"
+        }
+        
+        ,new AttractionViewModel{
+            Title = "Pailon del Diablo",
+            ImageURL = "RoomPictures/gallery-2.jpg",
+            Description = "ir por alla"
+        }
+        
+        
+        ,new AttractionViewModel{
+            Title = "Volcan Tungurahua",
+            ImageURL = "RoomPictures/gallery-2.jpg",
+            Description = "Paseos en caballo son lo mejor"
+        }
+    };
+}
+
+<style>
+    .attractionsList{}
+    .attractionsList td{padding-bottom:30px}
+</style>
+
+
+<h2>Banos</h2>
+<table class="attractionsList">
+    @foreach (AttractionViewModel thing in thingsToDo)
+    {
+        <tr>
+            <td>
+                <img src="@thing.ImageURL" width="200"/>
+            </td>
+            <td style="vertical-align:top">
+                <h3>@thing.Title</h3>
+                @thing.Description
+            </td>
+        </tr>
+    }
+</table>

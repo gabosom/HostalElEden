@@ -213,6 +213,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\RoomsController.cs" />
+    <Compile Include="Models\AttractionViewModel.cs" />
     <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Models\RoomTypesReservationViewModel.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -417,6 +418,7 @@
     <Content Include="Views\Rooms\Success.cshtml" />
     <Content Include="Views\Shared\Location.cshtml" />
     <Content Include="Views\Home\Gallery.cshtml" />
+    <Content Include="Views\Home\Banos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

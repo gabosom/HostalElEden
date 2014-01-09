@@ -16,6 +16,10 @@ namespace HotelEden.Models
         {
         }
 
+        public ActionResult Banos()
+        {
+            return View();
+        }
         public ActionResult Gallery()
         {
             return View();
