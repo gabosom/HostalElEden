@@ -17,7 +17,7 @@ namespace HotelEden.Models
             }
             set
             {
-                this._ImageURL = "/Content/" + value;
+                this._ImageURL = "/Images/Banos/" + value;
             }
         }
         public string Description { get; set; }

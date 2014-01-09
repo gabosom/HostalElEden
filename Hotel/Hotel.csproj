@@ -330,6 +330,12 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Images\Banos\diablo.JPG" />
+    <Content Include="Images\Banos\horsebackriding.jpg" />
+    <Content Include="Images\Banos\quadbike.JPG" />
+    <Content Include="Images\Banos\rafting.JPG" />
+    <Content Include="Images\Banos\tungurahua.JPG" />
+    <Content Include="Images\Banos\ziplining.jpg" />
     <Content Include="Images\index_20.gif" />
     <Content Include="Images\Resources\calendar.gif" />
     <Content Include="Images\Resources\roomOccupants.png" />
