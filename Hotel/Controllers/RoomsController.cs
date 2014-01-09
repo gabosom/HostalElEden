@@ -50,7 +50,8 @@ namespace HotelEden.Models
         public ActionResult Index()
         {
             //TODO: get room data from somewhere else           
-            return View(RoomFactory.GetAllRooms());
+            //return View(RoomFactory.GetAllRooms());
+            return View();
         }
 
         public ActionResult Search(RoomTypesReservationViewModel reservationSearch)
@@ -69,8 +70,10 @@ namespace HotelEden.Models
                     TripleSimpleCount = 0
                 };
 
-                ViewBag.AllRooms = RoomFactory.GetAllRooms();
-                return View(viewModel);
+                //ViewBag.AllRooms = RoomFactory.GetAllRooms();
+
+                ViewBag.IsSearch = true;
+                return View("Index", viewModel);
             }
             else
             {

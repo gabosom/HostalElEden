@@ -1,4 +1,4 @@
-﻿@model IEnumerable<HotelEden.Models.RoomType>
+﻿@model HotelEden.Models.RoomTypesReservationViewModel
 
 @{
     ViewBag.Title = HotelEden.SpanishResources.SiteRoomsTitle;
@@ -6,12 +6,19 @@
 }
 
 <h2>@HotelEden.SpanishResources.RoomsTitle</h2>
-<p>@HotelEden.SpanishResources.RoomsPageDescription
-    </p>
+@if(ViewBag.IsSearch == null)
+{
+    <p>@HotelEden.SpanishResources.RoomsPageDescription</p>
+}
+else
+{
+    @String.Format(HotelEden.SpanishResources.RoomsSearchDescription,Model.CheckInDate.ToShortDateString(), Model.CheckOutDate.ToShortDateString())
+}
+
 <table class="roomList">
     <tr>
         <th colspan="2"></th>
-        <th>por persona</th>
+        <th>por noche</th>
         <th></th>
     </tr>
     <tr class="roomListItemBreak">
@@ -20,7 +27,7 @@
         </td>
     </tr>
 
-@foreach (var item in Model) {
+@foreach (var item in HotelEden.Utils.RoomFactory.GetAllRooms()) {
     using (Html.BeginForm("Reserve", "Rooms", FormMethod.Get)) { 
     <tr class="roomListItem">
         <td class="roomThumbColumn">
@@ -35,8 +42,19 @@
                 }
             </div>
             <span>@Html.Raw(item.Description)</span>
-            @Html.Hidden("CheckInDate", DateTime.Today.AddDays(1).ToShortDateString())
-            @Html.Hidden("CheckOutDate", DateTime.Today.AddDays(2).ToShortDateString())
+            @Html.Raw(HotelEden.SpanishResources.RoomsBasicInfo)
+
+            @if(ViewBag.IsSearch == null)
+            { 
+                @Html.Hidden("CheckInDate", DateTime.Today.AddDays(1).ToShortDateString())
+                @Html.Hidden("CheckOutDate", DateTime.Today.AddDays(2).ToShortDateString())
+                
+            }
+            else
+            {
+                @Html.Hidden("CheckInDate", Model.CheckInDate.ToShortDateString())
+                @Html.Hidden("CheckOutDate", Model.CheckOutDate.ToShortDateString())
+            }
             @Html.Hidden(item.Keyword + "Count", "1")
         </td>
         
