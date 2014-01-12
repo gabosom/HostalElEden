@@ -18,7 +18,7 @@ else
 <table class="roomList">
     <tr>
         <th colspan="2"></th>
-        <th>por noche</th>
+        <th></th>
         <th></th>
     </tr>
     <tr class="roomListItemBreak">
@@ -60,6 +60,9 @@ else
         
         <td class="priceColumn">
             USD $@String.Format("{0:0.00}", item.Rate)
+            <div class="costDetails">
+                por noche
+            </div>
         </td>
         <td class="selectColumn">
             <input class="RoomsSelectRoom" type="submit" value="@HotelEden.SpanishResources.RoomsSelectRoom" />
