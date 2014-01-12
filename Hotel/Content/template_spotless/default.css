@@ -60,7 +60,7 @@
 
 	.header
 	{
-		margin-bottom: 4em;
+		margin-bottom: .5em;
 		padding-left: 2em;
 		border-left: 6px solid #d31e0b;
 	}
@@ -315,7 +315,7 @@
 	#header
 	{
 		position: relative;
-		padding: 3em 0em;
+		padding: 1em 0em;
 	}
 
 /*********************************************************************************/
@@ -328,6 +328,7 @@
 	
 	#logo h1
 	{
+        font-size:3em;
 	}
 	
 	#logo h1 a
