@@ -86,35 +86,9 @@ namespace HotelEden.Models
         {
             if (ModelState.IsValid)
             {
-                //complete roomtype information
-                foreach (RoomType roomType in fullReservation.ReservedRoomTypes)
-                    roomType.CompletePropertiesFromKeyword();
-
-
-                //mandar email al hostal con la reservacion
-                Emailer emailer = new Emailer();
-                emailer.AddToDestinatary(Settings.HostalEmail);
-                emailer.EmailSubject= "Reservacion de " + fullReservation.FirstName + " " + fullReservation.LastName;
-
-                //Detalles del cliente
-                emailer.AddLine("Nombre: " + fullReservation.FirstName + " " + fullReservation.LastName);
-                emailer.AddLine("Email: " + fullReservation.Email);
-                emailer.AddLine("Fecha de Llegada: " + fullReservation.CheckInDate.ToShortDateString());
-                emailer.AddLine("Fecha de Salida: " + fullReservation.CheckOutDate.ToShortDateString());
-                emailer.AddLine("Numero de noches: " + fullReservation.NumNights);
-                emailer.AddLine("Total de habitaciones: " + fullReservation.ReservedRoomTypes.Count);
-                emailer.AddHTML("<h3>Total: $" + fullReservation.TotalPrice + "</h3>");
-
-                int count = 1;
-                foreach(RoomType room in fullReservation.ReservedRoomTypes)
-                {
-                    emailer.AddHTML("<h3>Habitacion " + count++ + "</h3>");
-                    emailer.AddLine("Tipo de habitacion: " + room.Title);
-                    emailer.AddLine("Numero de huespedes: " + room.CurrentGuests);
-                    emailer.AddHTML("<br/>");
-                }
-
-                emailer.SendEmail();
+                CommunicationManager comms = new CommunicationManager();
+                comms.SendReservationToHotel(fullReservation);
+                comms.SendReservationToGuest(fullReservation);
                 return RedirectToAction("Success", fullReservation);
             }
             else

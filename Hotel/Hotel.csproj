@@ -238,6 +238,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SpanishResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Utils\CommunicationManager.cs" />
     <Compile Include="Utils\Emailer.cs" />
     <Compile Include="Utils\RoomFactory.cs" />
     <Compile Include="Utils\Settings.cs" />
@@ -279,9 +280,11 @@
     <Content Include="Content\template_spotless\default.css" />
     <Content Include="Content\template_spotless\fonts.css" />
     <Content Include="Content\template_spotless\images\banner.jpg" />
+    <Content Include="Content\template_spotless\images\gallery-1.JPG" />
     <Content Include="Content\template_spotless\images\pic01.jpg" />
     <Content Include="Content\template_spotless\images\pic02.jpg" />
     <Content Include="Content\template_spotless\images\pic03.jpg" />
+    <Content Include="Content\template_spotless\template_override.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
