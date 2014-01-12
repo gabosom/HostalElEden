@@ -15,9 +15,10 @@
 .roomListItem .priceColumn, .totalRow .priceColumn{width:100px; font-weight:bold; font-size:1.1em;}
 .roomListItem .priceColumn .costDetails{font-size:.8em; font-weight:normal;margin-top:10px}
 .roomListItem .maxGuestsColumn{width:65px}
+.roomListItem .maxGuestsColumn .guestsDetails{font-size:.8em; font-weight:normal;margin-top:10px}
 .roomListItem .selectColumn{width:100px;}
 .roomListItem .selectColumn a, .RoomsSelectRoom{
-    padding:3px 5px; background-color:orange; border-radius:2px; border-color:darkorange; border-width:2px; text-decoration:none; color:white; font-weight:bold; width:100px !important; white-space:pre-wrap;height:3.4em;
+    padding:3px 5px; background-color:orange; border-radius:2px; border-color:darkorange; border-width:2px; text-decoration:none; color:white; font-weight:bold; width:100px !important; white-space:pre-wrap;height:3.4em; cursor:pointer
 }
 
 .roomListItemBreak hr{margin:9px 0px 15px 0px;}
