@@ -50,7 +50,7 @@ namespace HotelEden.Utils
 
             //mandar email al hostal con la reservacion
             Emailer emailer = new Emailer();
-            emailer.AddToDestinatary(Settings.HostalEmail);
+            emailer.AddToDestinatary(reservation.Email);
             emailer.EmailSubject = SpanishResources.HotelName + " - Reservacion de " + reservation.FirstName + " " + reservation.LastName;
 
             //Detalles del cliente
