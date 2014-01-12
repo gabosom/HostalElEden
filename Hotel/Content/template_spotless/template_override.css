@@ -1,0 +1,45 @@
+﻿/** HomePage Reservation */
+
+.homeReservation {
+    width: 310px;
+    height: 250px;
+}
+
+
+
+.homeReservation .formLabel {
+color: #D5A787;
+font-size: .9em;
+text-align: left;
+height: 30px;
+}
+
+.homeReservation .date {
+width: 135px;
+margin-right: 5px;
+}
+
+.homeReservation .searchDates {
+text-align: right;
+padding-top: 30px;
+height: 30px;
+}
+
+
+/* Location */
+#map-canvas { height: 200px; width:90%; }
+
+/* Template Overrides */
+.tbox1{ width:688px;}
+.tbox2{width:400px; }
+.boxContents{margin:20px 0px;background-color: #9e1506; padding:10px 30px; color: #D5A787;}
+
+.boxContentTitle {
+color: #FFF554;
+font-size: 1.5em;
+text-align: center;
+}
+
+#page h3 {
+    text-transform: none;
+}

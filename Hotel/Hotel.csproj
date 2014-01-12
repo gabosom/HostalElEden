@@ -276,6 +276,12 @@
     <Content Include="Content\RoomPictures\gallery-7.JPG" />
     <Content Include="Content\template.css" />
     <Content Include="Content\template_override.css" />
+    <Content Include="Content\template_spotless\default.css" />
+    <Content Include="Content\template_spotless\fonts.css" />
+    <Content Include="Content\template_spotless\images\banner.jpg" />
+    <Content Include="Content\template_spotless\images\pic01.jpg" />
+    <Content Include="Content\template_spotless\images\pic02.jpg" />
+    <Content Include="Content\template_spotless\images\pic03.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -427,6 +433,8 @@
     <Content Include="Views\Shared\Location.cshtml" />
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Banos.cshtml" />
+    <Content Include="Views\Shared\_Template_Spotless.cshtml" />
+    <Content Include="Views\Home\Opcion2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

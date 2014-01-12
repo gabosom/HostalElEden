@@ -74,6 +74,11 @@ namespace HotelEden.Models
             }
             return View();
         }
+
+        public ActionResult Opcion2()
+        {
+            return View();
+        }
     }
 }
 
