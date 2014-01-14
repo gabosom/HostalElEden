@@ -1,0 +1,48 @@
+﻿@model HotelEden.Models.ContactViewModel
+
+@{
+    ViewBag.Title = HotelEden.SpanishResources.ContactTitle;
+}
+
+<article>
+    <hgroup class="title">
+        <h1>@ViewBag.Title</h1>
+    </hgroup>    
+
+    <section class="contact">
+        @if(ViewBag.CommentSent == null)
+        {
+            <p>
+                @HotelEden.SpanishResources.ContactDescription
+            </p>
+            <header>
+                <h3>@HotelEden.SpanishResources.ContactFormTitle</h3>
+            </header>
+            using(Html.BeginForm("Contact","Home",FormMethod.Post))
+            {
+                <label>@HotelEden.SpanishResources.ContactFormName</label>
+                @Html.EditorFor(model => model.Name)
+                @Html.LabelFor(model => model.Email)
+                @Html.EditorFor(model => model.Email)
+                @Html.LabelFor(model =>model.Comment)
+                @Html.TextAreaFor(model => model.Comment)
+                <input type="submit" value="@HotelEden.SpanishResources.ContactSubmit"/>
+            }
+        }
+        else
+        {
+            <p>@HotelEden.SpanishResources.ContactSentDetails</p>
+        }
+    </section>
+</article>
+
+<aside>
+    @Html.Partial("Location")
+</aside>
+
+@section scripts{
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnXO2svuBw2vK22y84okRmLvbE50AwBWM&sensor=false">
+    </script>
+    <script src="~/Scripts/Maps.js" type="text/javascript"></script>
+}

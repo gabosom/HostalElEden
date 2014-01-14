@@ -2,23 +2,24 @@
 @using HotelEden.Utils;
 @{
     
-    ViewBag.Title = HotelEden.SpanishResources.GalleryTitle;    
+    ViewBag.Title = HotelEden.SpanishResources.GalleryTitle;
+    Layout = "~/Views/Shared/_Template.cshtml";
+
+    
 }
 
 @Styles.Render("~/Content/Gallery/jquery.galleryview-3.0-dev.css")
+<h2>@HotelEden.SpanishResources.GalleryTitle</h2>
+<ul id="myGallery">
+    @foreach(RoomType room in RoomFactory.GetAllRooms())
+    {
+        <li>
+            <img data-frame="@room.ThumbURL" src="@room.ImageURL" title="@room.Title" data-description="@room.ShortDescription" />
+        </li>
+    }
+    
+</ul>
 
-<div id="page" class="container">
-    <h2>@HotelEden.SpanishResources.GalleryTitle</h2>
-    <ul id="myGallery">
-        @foreach (RoomType room in RoomFactory.GetAllRooms())
-        {
-            <li>
-                <img data-frame="@room.ThumbURL" src="@room.ImageURL" title="@room.Title" data-description="@room.ShortDescription" />
-            </li>
-        }
-
-    </ul>
-</div>
 
 @section Scripts
 {
@@ -50,7 +51,7 @@
                 show_captions: false, 			//BOOLEAN - flag to show or hide frame captions	
                 filmstrip_size: 3, 				//INT - number of frames to show in filmstrip-only gallery
                 filmstrip_style: 'scroll', 		//STRING - type of filmstrip to use (scroll = display one line of frames, scroll filmstrip if necessary, showall = display multiple rows of frames if necessary)
-                filmstrip_position: 'right', 	//STRING - position of filmstrip within gallery (bottom, top, left, right)
+                filmstrip_position: 'bottom', 	//STRING - position of filmstrip within gallery (bottom, top, left, right)
                 frame_width: 164, 				//INT - width of filmstrip frames (in pixels)
                 frame_height: 80, 				//INT - width of filmstrip frames (in pixels)
                 frame_opacity: 0.5, 			//FLOAT - transparency of non-active frames (1.0 = opaque, 0.0 = transparent)
