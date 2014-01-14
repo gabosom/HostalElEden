@@ -334,6 +334,7 @@
 	#logo h1 a
 	{
 		color: #d31e0b;
+        font-family: 'Segoe UI Light', 'Source Sans Pro', sans-serif;
 	}
 	
 	#logo span
@@ -357,7 +358,7 @@
 	#menu-wrapper
 	{
 		overflow: hidden;
-		height: 60px;
+		height: 50px;
 		background: #d31e0b;
 		border-bottom: 4px solid #9e1506;
 	}
@@ -382,7 +383,7 @@
 	{
 		overflow: hidden;
 		padding: 1em 3em 1em 0em;
-		line-height: 60px;
+		line-height: 50px;
 		letter-spacing: 0.10em;
 		text-decoration: none;
 		text-transform: uppercase;

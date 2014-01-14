@@ -1,4 +1,5 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿@using HotelEden.Helpers
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by Free CSS Templates
 http://www.freecsstemplates.org
@@ -33,21 +34,14 @@ Released   : 20130921
     <div id="menu-wrapper">
         <div id="menu" class="container">
             <ul>
-                <li>
-                    <a href="/">Inicio</a>
-                </li>
-                <li>
-                    @Html.ActionLink(HotelEden.SpanishResources.MenuRooms, "Index", "Rooms")
-                </li>
-                <li>
-                    @Html.ActionLink(HotelEden.SpanishResources.MenuGallery, "Gallery", "Home")
-                </li>
-                <li>
-                    @Html.ActionLink(HotelEden.SpanishResources.MenuBanos, "Banos", "Home")
-                </li>
-                <li>
-                    @Html.ActionLink(HotelEden.SpanishResources.MenuContacto, "Contact", "Home")
-                </li>
+                
+                    @Html.MenuItem("Inicio", "Index", "Home")
+                
+                    @Html.MenuItem(HotelEden.SpanishResources.MenuRooms, "Index", "Rooms")
+                    @Html.MenuItem(HotelEden.SpanishResources.MenuGallery, "Gallery", "Home")
+                    @Html.MenuItem(HotelEden.SpanishResources.MenuBanos, "Banos", "Home")
+                    @Html.MenuItem(HotelEden.SpanishResources.MenuContacto, "Contact", "Home")
+                
             </ul>
         </div>
     </div>

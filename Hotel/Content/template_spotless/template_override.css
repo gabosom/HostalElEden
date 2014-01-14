@@ -109,7 +109,7 @@ height: 30px;
 /* Template Overrides */
 .tbox1{ width:688px;}
 .tbox2{width:400px; }
-.boxContents{margin:20px 0px;background-color: #9e1506; padding:10px 30px; color: #D5A787;}
+.boxContents{margin:0px 0px 20px 0px;background-color: #9e1506; padding:10px 30px; color: #D5A787;}
 
 .boxContentTitle {
 color: #FFF554;
@@ -120,3 +120,5 @@ text-align: center;
 #page h3 {
     text-transform: none;
 }
+
+#menu .selected{background-color:#9e1506}

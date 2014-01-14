@@ -240,6 +240,7 @@
     </Compile>
     <Compile Include="Utils\CommunicationManager.cs" />
     <Compile Include="Utils\Emailer.cs" />
+    <Compile Include="Helpers\MenuItemExtension.cs" />
     <Compile Include="Utils\RoomFactory.cs" />
     <Compile Include="Utils\Settings.cs" />
   </ItemGroup>
@@ -430,8 +431,6 @@
     <Content Include="Views\Rooms\Single.cshtml" />
     <Content Include="Views\Rooms\Index.cshtml" />
     <Content Include="Views\Rooms\Reserve.cshtml" />
-    <Content Include="Views\Rooms\Search.cshtml" />
-    <Content Include="Views\Rooms\TestEditView.cshtml" />
     <Content Include="Views\Rooms\Success.cshtml" />
     <Content Include="Views\Shared\Location.cshtml" />
     <Content Include="Views\Home\BrownTemplate\Gallery.cshtml" />
@@ -442,7 +441,12 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Opcion2.cshtml" />
+    <Content Include="Views\Rooms\BrownTemplate\Index.cshtml" />
+    <Content Include="Views\Rooms\BrownTemplate\Reserve.cshtml" />
+    <Content Include="Views\Rooms\BrownTemplate\Search.cshtml" />
+    <Content Include="Views\Rooms\BrownTemplate\Single.cshtml" />
+    <Content Include="Views\Rooms\BrownTemplate\Success.cshtml" />
+    <Content Include="Views\Rooms\BrownTemplate\TestEditView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
