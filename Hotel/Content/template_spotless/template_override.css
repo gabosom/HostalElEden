@@ -23,7 +23,7 @@
 
 .roomListItemBreak hr{margin:9px 0px 15px 0px;}
 
-.roomOccupant{background:url('../Images/Resources/roomOccupants.png') no-repeat; height:30px; display:inline-block; width:11px}
+.roomOccupant{background:url('../../../Images/Resources/roomOccupants.png') no-repeat; height:30px; display:inline-block; width:11px}
 .disabledNextButton
 {
     background-color:gray;

@@ -2,21 +2,18 @@
 
 @{
     ViewBag.Title = HotelEden.SpanishResources.SiteRoomsSuccess;
+    Layout = "~/Views/Shared/_Template.cshtml";
 }
 
-<div id="page" class="container">
-    <div class="tbox1">
-        <h2>@HotelEden.SpanishResources.SuccessTitle</h2>
-        @Html.Raw(HotelEden.SpanishResources.SuccessDetails)
-    </div>
+<article>
+    <h2>@HotelEden.SpanishResources.SuccessTitle</h2>
+    @Html.Raw(HotelEden.SpanishResources.SuccessDetails)
+</article>
 
-    <div class="tbox2">
-        <div class="boxContents">
-            @Html.Partial("Location")
-        </div>        
-    </div>
+<aside>
+    @Html.Partial("Location")
+</aside>
 
-</div>
 @section scripts{
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnXO2svuBw2vK22y84okRmLvbE50AwBWM&sensor=false">
