@@ -382,7 +382,7 @@
 	#menu li a, #menu li span
 	{
 		overflow: hidden;
-		padding: 1em 3em 1em 0em;
+		padding: 1em 1.5em 1em 1.5em;
 		line-height: 50px;
 		letter-spacing: 0.10em;
 		text-decoration: none;
