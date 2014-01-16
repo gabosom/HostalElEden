@@ -31,7 +31,7 @@ namespace HotelEden.Models
                     Description = @"<p>Ziplining es una de las actividades más populares de baños que involucra cruzar 2000 metros colgado a diferentes velocidades y alturas. El canopy esta en Puntzan, que está aproximadamente a 10 minutos del centro de Baños y tendrá la oportunidad de ver increíbles paisajes y biodiversidad. Esta actividad se realiza con estándares de seguridad y nos aseguraremos de que sea increíble.</p>"
                 },
                 new AttractionViewModel{
-                    Title = "Recorrer Banos en moto o go-kart",
+                    Title = "Recorrer Baños en moto o go-kart",
                     ImageURL = "quadbike.jpg", //http://commons.wikimedia.org/wiki/File:Aeon_Cobra_220_ATV_Quad_bike.JPG
                     Description = "<p>Puede rentar una cuatri-moto o un kart para 2 personas para recorrer Baños y conocer hasta las más secretas partes de la ciudad.</p>"
                 }

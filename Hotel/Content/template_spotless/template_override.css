@@ -11,6 +11,9 @@
 .roomListItem img{ width:150px;}
 .roomListItem h3{margin:0px;}
 .roomListItem .roomTitleColumn{padding:0px 10px 0px 10px;}
+.roomListItem .roomTitleColumn h3{padding-bottom:0px !important}
+.roomListItem .roomTitleColumn ul{padding-left:30px}
+.roomListItem .roomTitleColumn ul li{list-style-type:disc}
 .roomListItem .roomThumbColumn{width:150px;padding-top:0em;}
 .roomListItem .priceColumn, .totalRow .priceColumn{width:100px; font-weight:bold; font-size:1.1em;}
 .roomListItem .priceColumn .costDetails{font-size:.8em; font-weight:normal;margin-top:10px}
@@ -20,6 +23,7 @@
 .roomListItem .selectColumn a, .RoomsSelectRoom{
     padding:3px 5px; background-color:orange; border-radius:2px; border-color:darkorange; border-width:2px; text-decoration:none; color:white; font-weight:bold; width:100px !important; white-space:pre-wrap;height:3.4em; cursor:pointer
 }
+
 
 .roomListItemBreak hr{margin:9px 0px 15px 0px;}
 
@@ -44,7 +48,7 @@
 /*** Reserve page */
 .reserveList td{padding-top:0px;}
 .reserveList .lastBreak hr{margin-bottom:0px; border-bottom:none;}
-.reserveList .totalRow{background-color:#5C3317;}
+.reserveList .totalRow{background-color:#9e1506;}
 .reserveList .totalRow .roomTitleColumn h3{padding-right:5px; padding-left:5px; margin-top:0px;color:#fff554; font-size:1.5em; font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif; font-weight:normal;}
 
 .reserveFormContainer{
@@ -53,16 +57,16 @@
     border-radius:3px;
 }
 
-.reserveFormContainer label
+.reserveFormContainer label, label
 {
-    color:#fff554;
+    color:#fff554; padding-right:10px;
 }
 
 /*** Home page reservation*/
 .homeReservation .validation-summary-errors ul{margin-top:0px; margin-bottom:0px;}
 
 /** Home page*/
-#map-canvas { height: 200px; width:100%; }
+#map-canvas { height: 200px; width:100%; margin:auto }
 
 
 
@@ -108,8 +112,8 @@ height: 30px;
 
 /* Template Overrides */
 .tbox1{ width:688px;}
-.tbox2{width:400px; }
-.boxContents{margin:0px 0px 20px 0px;background-color: #9e1506; padding:10px 30px; color: #D5A787;}
+.tbox2{width:322px; }
+.boxContents{margin:0px 0px 20px 0px;background-color: #9e1506; padding:10px 10px; color: #D5A787;}
 
 .boxContentTitle {
 color: #FFF554;
@@ -122,3 +126,7 @@ text-align: center;
 }
 
 #menu .selected{background-color:#9e1506}
+
+.single-line, textarea{width:300px;}
+.reserve-textfield{width:170px;}
+table{border-spacing:0px;}

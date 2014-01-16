@@ -6,60 +6,60 @@
 
 <div id="page" class="container">
     <div class="tbox1">
-        <hgroup class="title">
+        <div class="header">
             <h1>@ViewBag.Title</h1>
-        </hgroup>
+            </div>
 
-        <section class="contact">
-            @if (ViewBag.CommentSent == null)
-            {
-                <p>
-                    @HotelEden.SpanishResources.ContactDescription
-                </p>
-                <header>
-                    <h3>@HotelEden.SpanishResources.ContactFormTitle</h3>
-                </header>
-                <table>
-                    @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
-                    {
-                    <tr>
-                        <td>
-                            <label>@HotelEden.SpanishResources.ContactFormName</label>
-                        </td>
-                        <td>
-                            @Html.EditorFor(model => model.Name)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            @Html.LabelFor(model => model.Email)
-                        </td>
-                        <td>
-                            @Html.EditorFor(model => model.Email)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            @Html.LabelFor(model => model.Comment)
-                        </td>
-                        <td>
-                            @Html.TextAreaFor(model => model.Comment)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="submit" value="@HotelEden.SpanishResources.ContactSubmit" />
-                        </td>
-                    </tr>
-                    
-                    }
-                </table>
-            }
-            else
-            {
-                <p>@HotelEden.SpanishResources.ContactSentDetails</p>
-            }
-        </section>
+            <section class="contact">
+                @if (ViewBag.CommentSent == null)
+                {
+                    <p>
+                        @HotelEden.SpanishResources.ContactDescription
+                    </p>
+                    <header>
+                        <h3>@HotelEden.SpanishResources.ContactFormTitle</h3>
+                    </header>
+                    <table>
+                        @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+                        {
+                            <tr>
+                                <td>
+                                    <label>@HotelEden.SpanishResources.ContactFormName</label>
+                                </td>
+                                <td>
+                                    @Html.EditorFor(model => model.Name)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.Email)
+                                </td>
+                                <td>
+                                    @Html.EditorFor(model => model.Email)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.Comment)
+                                </td>
+                                <td>
+                                    @Html.TextAreaFor(model => model.Comment, new { rows = 4 })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" value="@HotelEden.SpanishResources.ContactSubmit" />
+                                </td>
+                            </tr>
+
+                        }
+                    </table>
+                }
+                else
+                {
+                    <p>@HotelEden.SpanishResources.ContactSentDetails</p>
+                }
+            </section>
         </div>
 
     <div class="tbox2">

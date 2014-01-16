@@ -316,7 +316,7 @@
     <value>noches</value>
   </data>
   <data name="SuccessDetails" xml:space="preserve">
-    <value>&lt;p&gt;Se ha enviado la solicitud y uno de nuestros representantes se pondra en contacto pronto con usted para finalizar la reservacion.,&lt;/p&gt;&lt;p&gt;Recomendamos que lea la seccion de Banos para que se familiarize con las acrividades que puede hacer aca. &lt;/p&gt;&lt;p&gt;Lo vemos pronto!&lt;/p&gt;</value>
+    <value>&lt;p&gt;Se ha enviado la solicitud y uno de nuestros representantes se pondra en contacto pronto con usted para finalizar la reservacion.,&lt;/p&gt;&lt;p&gt;Recomendamos que lea la seccion de Baños para que se familiarize con las acrividades que puede hacer aca. &lt;/p&gt;&lt;p&gt;Lo vemos pronto!&lt;/p&gt;</value>
   </data>
   <data name="SuccessTitle" xml:space="preserve">
     <value>Solicitud Enviada</value>

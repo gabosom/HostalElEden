@@ -8,17 +8,19 @@
 @Styles.Render("~/Content/Gallery/jquery.galleryview-3.0-dev.css")
 
 <div id="page" class="container">
-    <h2>@HotelEden.SpanishResources.GalleryTitle</h2>
-    <ul id="myGallery">
-        @foreach (RoomType room in RoomFactory.GetAllRooms())
-        {
-            <li>
-                <img data-frame="@room.ThumbURL" src="@room.ImageURL" title="@room.Title" data-description="@room.ShortDescription" />
-            </li>
-        }
+    <div class="header">
+        <h2>@HotelEden.SpanishResources.GalleryTitle</h2>
+    </div>
+        <ul id="myGallery">
+            @foreach (RoomType room in RoomFactory.GetAllRooms())
+            {
+                <li>
+                    <img data-frame="@room.ThumbURL" src="@room.ImageURL" title="@room.Title" data-description="@room.ShortDescription" />
+                </li>
+            }
 
-    </ul>
-</div>
+        </ul>
+    </div>
 
 @section Scripts
 {

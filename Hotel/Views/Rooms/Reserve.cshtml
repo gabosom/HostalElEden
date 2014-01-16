@@ -6,173 +6,175 @@
 }
 
 <div id="page" class="container">
-    <h2>@HotelEden.SpanishResources.ReservePageTitle</h2>
-    <p>@HotelEden.SpanishResources.ReservePageDescription</p>
+    <div class="header">
+        <h2>@HotelEden.SpanishResources.ReservePageTitle</h2>
+    </div>
+        <p>@HotelEden.SpanishResources.ReservePageDescription</p>
 
-    @using (Html.BeginForm("SubmitReserve", "Rooms", FormMethod.Get))
-    {
-        <div class="tbox1">
+        @using (Html.BeginForm("SubmitReserve", "Rooms", FormMethod.Get))
+        {
+            <div class="tbox1">
 
-            <table class="roomList reserveList">
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th>@*@HotelEden.SpanishResources.RoomsCostColumn*@</th>
-                    @*<th>@HotelEden.SpanishResources.RoomsReserveTotalColumn</th>*@
-                </tr>
-                <tr class="roomListItemBreak">
-                    <td colspan="3">
-                        <hr />
-                    </td>
-                </tr>
-
-                @{int currentRoomCount = 0;}
-                @foreach (var item in Model.ReservedRoomTypes)
-                {
-
-
-
-                    <tr class="roomListItem">
-
-                        @*<td class="roomThumbColumn">
-                                @*<img src="@Html.DisplayFor(modelItem => item.ImageURL)" />
-                            </td>*@
-                        <td class="roomTitleColumn">
-                            @* need hidden input to submit multiple roomTypes: http://stackoverflow.com/questions/231878/complex-model-binding-to-a-list *@
-                            @Html.Hidden("ReservedRoomTypes.Index", currentRoomCount)
-                            @Html.Hidden("ReservedRoomTypes[" + currentRoomCount + "].Keyword", item.Keyword)
-                            <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
-                            <div>
-                                @for (int i = 0; i < item.MaxGuestNo; i++)
-                                {
-                                    <span class="roomOccupant"></span>
-                                }
-                            </div>
-                        </td>
-
-                        <td class="maxGuestsColumn">
-                            @{
-                    var fieldCountName = "ReservedRoomTypes[" + currentRoomCount + "].CurrentGuests";
-                            }
-                            <select name="@fieldCountName">
-                                @for (int i = 1; i <= item.MaxGuestNo; i++)
-                                {
-                                    if (i != item.MaxGuestNo)
-                                    {
-                                        <option value="@i">@i</option>
-                                    }
-                                    else
-                                    {
-                                        <option value="@i" selected="selected">@i</option>
-                                    }
-                                }
-                            </select>
-                            <div class="guestsDetails">@HotelEden.SpanishResources.RoomsReservePeoplePerRoom</div>
-                        </td>
-                        <td class="priceColumn" data-rate="@item.Rate">
-                            @{
-                                double totalForRoom = item.Rate * Model.NumNights;
-                                total += totalForRoom;
-                            }
-                            USD $<span data-info="totalRoom">@String.Format("{0:0.00}", totalForRoom)</span>
-                            <div class="costDetails">
-                                $<span data-info="ratePerNight">@String.Format("{0:0.00}", item.Rate)</span> X <span data-info="numNights">@Model.NumNights</span> @HotelEden.SpanishResources.NightsLowercase
-                            </div>
-                        </td>
-                        @{currentRoomCount++;}
-                        @*<td class="selectColumn">
-                                Html.ActionLink(HotelEden.SpanishResources.RoomsSelectRoom, "Reserve", "Rooms", new { room = item.URL }, null)
-                            </td>*@
+                <table class="roomList reserveList">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>@*@HotelEden.SpanishResources.RoomsCostColumn*@</th>
+                        @*<th>@HotelEden.SpanishResources.RoomsReserveTotalColumn</th>*@
                     </tr>
-                    <tr class="roomListItemBreak lastBreak">
+                    <tr class="roomListItemBreak">
                         <td colspan="3">
                             <hr />
                         </td>
                     </tr>
 
-                }
+                    @{int currentRoomCount = 0;}
+                    @foreach (var item in Model.ReservedRoomTypes)
+                    {
 
-                <tr class="totalRow">
-                    <td class="roomTitleColumn">
-                        <h3>@HotelEden.SpanishResources.RoomsReserveTotal</h3>
-                    </td>
-                    <td></td>
-                    <td class="priceColumn yellowHeader">
-                        USD $<span data-info="totalRes">@String.Format("{0:0.00}", total)</span>
-                    </td>
 
-                    @*<td><input class="RoomsSelectRoom" type="submit" value="@HotelEden.SpanishResources.RoomsSelectRoom" /></td>*@
-                </tr>
-            </table>
 
-        </div>
-        <div class="tbox2">
-            <div class="boxContents">
-                <table>
+                        <tr class="roomListItem">
 
-                    <tr>
-                        <td>
-                            <label>@HotelEden.SpanishResources.ReserveFormFirstName</label>
-                        </td>
-                        <td>
-                            @Html.EditorFor(model => model.FirstName)
-                        </td>
-                    </tr>
+                            @*<td class="roomThumbColumn">
+                                    @*<img src="@Html.DisplayFor(modelItem => item.ImageURL)" />
+                                </td>*@
+                            <td class="roomTitleColumn">
+                                @* need hidden input to submit multiple roomTypes: http://stackoverflow.com/questions/231878/complex-model-binding-to-a-list *@
+                                @Html.Hidden("ReservedRoomTypes.Index", currentRoomCount)
+                                @Html.Hidden("ReservedRoomTypes[" + currentRoomCount + "].Keyword", item.Keyword)
+                                <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+                                <div>
+                                    @for (int i = 0; i < item.MaxGuestNo; i++)
+                                    {
+                                        <span class="roomOccupant"></span>
+                                    }
+                                </div>
+                            </td>
 
-                    <tr>
-                        <td>
-                            <label>@HotelEden.SpanishResources.ReserveFormLastName</label>
-                        </td>
-                        <td>
-                            @Html.EditorFor(model => model.LastName)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>@HotelEden.SpanishResources.ReserveFormEmail</label>
-                        </td>
-                        <td>
-                            @Html.EditorFor(model => model.Email)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>@HotelEden.SpanishResources.ReserveFormArrivalDate</label>
-                        </td>
-                        <td>
-                            @Html.EditorFor(model => model.CheckInDate, new { @class = "date", id = "CheckInDate" })
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>@HotelEden.SpanishResources.ReserveFormDepartureDate</label>
-                        </td>
-                        <td>
-                            @Html.EditorFor(model => model.CheckOutDate, new { @class = "date", id = "CheckOutDate" })
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <br />
-                        </td>
-                    </tr>
+                            <td class="maxGuestsColumn">
+                                @{
+                        var fieldCountName = "ReservedRoomTypes[" + currentRoomCount + "].CurrentGuests";
+                                }
+                                <select name="@fieldCountName">
+                                    @for (int i = 1; i <= item.MaxGuestNo; i++)
+                                    {
+                                        if (i != item.MaxGuestNo)
+                                        {
+                                            <option value="@i">@i</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@i" selected="selected">@i</option>
+                                        }
+                                    }
+                                </select>
+                                <div class="guestsDetails">@HotelEden.SpanishResources.RoomsReservePeoplePerRoom</div>
+                            </td>
+                            <td class="priceColumn" data-rate="@item.Rate">
+                                @{
+                                    double totalForRoom = item.Rate * Model.NumNights;
+                                    total += totalForRoom;
+                                }
+                                USD $<span data-info="totalRoom">@String.Format("{0:0.00}", totalForRoom)</span>
+                                <div class="costDetails">
+                                    $<span data-info="ratePerNight">@String.Format("{0:0.00}", item.Rate)</span> X <span data-info="numNights">@Model.NumNights</span> @HotelEden.SpanishResources.NightsLowercase
+                                </div>
+                            </td>
+                            @{currentRoomCount++;}
+                            @*<td class="selectColumn">
+                                    Html.ActionLink(HotelEden.SpanishResources.RoomsSelectRoom, "Reserve", "Rooms", new { room = item.URL }, null)
+                                </td>*@
+                        </tr>
+                        <tr class="roomListItemBreak lastBreak">
+                            <td colspan="3">
+                                <hr />
+                            </td>
+                        </tr>
 
-                    <tr>
+                    }
+
+                    <tr class="totalRow">
+                        <td class="roomTitleColumn">
+                            <h3>@HotelEden.SpanishResources.RoomsReserveTotal</h3>
+                        </td>
                         <td></td>
-                        <td>
-                            <input type="submit" value="@HotelEden.SpanishResources.ReserveFormSubmit" />
+                        <td class="priceColumn yellowHeader">
+                            USD $<span data-info="totalRes">@String.Format("{0:0.00}", total)</span>
                         </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            @Html.ValidationSummary()
-                        </td>
+
+                        @*<td><input class="RoomsSelectRoom" type="submit" value="@HotelEden.SpanishResources.RoomsSelectRoom" /></td>*@
                     </tr>
                 </table>
+
             </div>
-        </div>
-    }
-</div>
+            <div class="tbox2">
+                <div class="boxContents">
+                    <table>
+
+                        <tr>
+                            <td>
+                                <label>@HotelEden.SpanishResources.ReserveFormFirstName</label>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.FirstName, new { @class = "reserve-textfield" })
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>@HotelEden.SpanishResources.ReserveFormLastName</label>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.LastName, new { @class = "reserve-textfield" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>@HotelEden.SpanishResources.ReserveFormEmail</label>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Email, new { @class = "reserve-textfield" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>@HotelEden.SpanishResources.ReserveFormArrivalDate</label>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.CheckInDate, new { @class = "date reserve-textfield", id = "CheckInDate" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>@HotelEden.SpanishResources.ReserveFormDepartureDate</label>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.CheckOutDate, new { @class = "date reserve-textfield", id = "CheckOutDate" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <br />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="@HotelEden.SpanishResources.ReserveFormSubmit" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                @Html.ValidationSummary()
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        }
+    </div>
 @section Scripts{
     @Scripts.Render("~/bundles/jqueryui")
 @Scripts.Render("~/bundles/jqueryval")

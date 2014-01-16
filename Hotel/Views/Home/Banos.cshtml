@@ -2,7 +2,7 @@
 
 @model List<HotelEden.Models.AttractionViewModel>
 @{
-    ViewBag.Title = "Banos";
+    ViewBag.Title = "Baños";
 
     
 }
@@ -15,19 +15,21 @@
 
 
 <div id="page" class="container">
-    <h2>Banos</h2>
-    <table class="attractionsList">
-        @foreach (AttractionViewModel thing in Model)
-        {
-            <tr>
-                <td>
-                    <img src="@thing.ImageURL" width="200" />
-                </td>
-                <td style="vertical-align:top">
-                    <h3>@thing.Title</h3>
-                    @Html.Raw(thing.Description)
-                </td>
-            </tr>
-        }
-    </table>
-</div>
+    <div class="header">
+        <h2>Baños</h2>
+    </div>
+        <table class="attractionsList">
+            @foreach (AttractionViewModel thing in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="@thing.ImageURL" width="200" />
+                    </td>
+                    <td style="vertical-align:top">
+                        <h3>@thing.Title</h3>
+                        @Html.Raw(thing.Description)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
