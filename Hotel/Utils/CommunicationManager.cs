@@ -54,19 +54,19 @@ namespace HotelEden.Utils
             emailer.EmailSubject = SpanishResources.HotelName + " - Reservacion de " + reservation.FirstName + " " + reservation.LastName;
 
             //Detalles del cliente
-            emailer.AddHTML("<p>Se ha enviado la siguiente reservacion a nuestro staff. Nos pondremos en contacto con usted en la brevedad posible.</p> <br /><hr /><br />");
+            emailer.AddHTML("<p>Se ha enviado la siguiente petición de reserva a nuestros agentes.  Nos pondremos en contacto con usted en la brevedad possible.</p> <br /><hr /><br />");
             emailer.AddLine("Nombre: " + reservation.FirstName + " " + reservation.LastName);
             emailer.AddLine("Email: " + reservation.Email);
             emailer.AddLine("Fecha de Llegada: " + reservation.CheckInDate.ToShortDateString());
             emailer.AddLine("Fecha de Salida: " + reservation.CheckOutDate.ToShortDateString());
             emailer.AddLine("Numero de noches: " + reservation.NumNights);
-            emailer.AddLine("Total de habitaciones: " + reservation.ReservedRoomTypes.Count);
+            emailer.AddLine("Número de habitaciones: " + reservation.ReservedRoomTypes.Count);
             emailer.AddHTML("<h3>Total: $" + reservation.TotalPrice + "</h3>");
 
             int count = 1;
             foreach (RoomType room in reservation.ReservedRoomTypes)
             {
-                emailer.AddHTML("<h3>Habitacion " + count++ + "</h3>");
+                //emailer.AddHTML("<h3>Habitacion " + count++ + "</h3>");
                 emailer.AddLine("Tipo de habitacion: " + room.Title);
                 emailer.AddLine("Numero de huespedes: " + room.CurrentGuests);
                 emailer.AddHTML("<br/>");

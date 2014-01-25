@@ -154,7 +154,7 @@
     <value>Single</value>
   </data>
   <data name="RoomsPageDescription" xml:space="preserve">
-    <value>En Hostal El Eden contamos amplias y limpias habitaciones para nuestros huespedes con TV, Wi-Fi, y baño privado.</value>
+    <value>Si está buscando una opción más económica sin tener que sacrificar la privacidad y seguridad de tener una habitación para toda su familia o amigos, ofrecemos opciones para acomodar a más personas en cada habitación.  Para más detalles, por favor contáctenos a hostaleleden@</value>
   </data>
   <data name="RoomsSelectRoom" xml:space="preserve">
     <value>Seleccionar</value>
@@ -199,7 +199,8 @@
     <value>Total = {0} personas X ${1} USD = $</value>
   </data>
   <data name="ReservePageDescription" xml:space="preserve">
-    <value>Aquí está la reservación que quiere hacer. Al llenar la forma de la derecha, se mandará un correo con sus datos a uno de nuestros agentes y nos pondremos en contacto con usted para continuar con la reservación. </value>
+    <value>&lt;p&gt;Aquí están los detalles de la habitación para la cual esta interesado en hacer una reservación.&lt;/p&gt;
+&lt;p&gt;Por favor, llenar la forma de la derecha para que podamos enviar un correo electrónico con sus datos a uno de nuestros agentes, el cual se pondrá en contacto con usted para verificarle nuestra disponibilidad y completer su reservación.&lt;/p&gt;</value>
   </data>
   <data name="RoomDoubleMatrimonialKeyword" xml:space="preserve">
     <value>DoubleMatrimonial</value>
@@ -243,14 +244,13 @@
   <data name="FooterAuthor" xml:space="preserve">
     <value>Jorge Gabuardi</value>
   </data>
-  <data name="HomeAmenitiesDetails" xml:space="preserve">
-    <value>&lt;p&gt;Contamos con habitaciones simples, dobles, triples y cuadruples con banio privado. Las habitaciones son amplias, cuentan con television y cable y proveemos WiFi.&lt;/p&gt;&lt;p&gt;El hotel se encuentra en medio de Banios a pocos pasos de todas las atracciones turisticas.&lt;/p&gt;&lt;p&gt;Nuestro personal puede guiarlos en opciones y lugares disponibles para realizar paseos en bicicleta o motocicleta, canoas, rafting o actividades relajantes,</value>
-  </data>
   <data name="HomeInstructionsForReservations" xml:space="preserve">
     <value>Para hacer una reservacion, revise nuestras habitaciones disponibles o ingrese las fechas deseadas en la forma en la parte superior derecha de la pagina.</value>
   </data>
   <data name="HomeWelcomeDetails" xml:space="preserve">
-    <value>&lt;p&gt;Aqui encontrara una estadia placentera mientras es atendido por gente amable y dispuesta a ayudarlo en todo lo necesario para que su visita sea inolvidable.&lt;/p&gt;</value>
+    <value>&lt;p&gt;Hostal El Edén le ofrecerá una placentera estadía mientras es atendido por gente amable y dispuesta a ayudarlo en todo lo necesario para que su visita sea inolvidable.&lt;/p&gt;
+&lt;p&gt;Contamos con habitaciones simples, dobles, triples y cuádruples.  Las habitaciones son amplias, todas cuentan con baño privado, television, TV cable además de servicio de WiFi gratis.&lt;/p&gt;
+&lt;p&gt;El hotel se encuentra en medio de Baños a pocos pasos de todas las atracciones turísticas.  Nuestro personal puede guiarlos en opciones y lugares disponibles para realizar paseos en bicicleta, motocicleta, canoas, rafting o actividades relajantes.&lt;/p&gt;</value>
   </data>
   <data name="HomeWelcomeTitle" xml:space="preserve">
     <value>Bienvenido a Hostal El Eden!</value>
@@ -316,7 +316,10 @@
     <value>noches</value>
   </data>
   <data name="SuccessDetails" xml:space="preserve">
-    <value>&lt;p&gt;Se ha enviado la solicitud y uno de nuestros representantes se pondra en contacto pronto con usted para finalizar la reservacion.,&lt;/p&gt;&lt;p&gt;Recomendamos que lea la seccion de Baños para que se familiarize con las acrividades que puede hacer aca. &lt;/p&gt;&lt;p&gt;Lo vemos pronto!&lt;/p&gt;</value>
+    <value>&lt;p&gt;Su solicitud de reserva ha sido envíada!  Uno de nuestros representantes se pondrá en contacto con usted para finalizar la reservación.&lt;/p&gt;
+&lt;p&gt;Recomendamos leer la sección de Baños para que se familiarize con las actividades de las que puede disfrutar a lo largo de su estancia.&lt;/p&gt;
+&lt;p&gt;Esperamos su llegada!&lt;/p&gt;
+&lt;p&gt;El personal del Hostal El Edén&lt;/p&gt;</value>
   </data>
   <data name="SuccessTitle" xml:space="preserve">
     <value>Solicitud Enviada</value>
@@ -325,7 +328,7 @@
     <value>Galeria</value>
   </data>
   <data name="ContactDescription" xml:space="preserve">
-    <value>Estamos a su disposicion para cualquier duda o comentario. Puede contactarnos por email a gabosom@gmail.com o llene la forma y responderemos lo mas pronto posible.</value>
+    <value>Estamos a su disposición para cualquier duda o comentario.  Puede contactarnos por email a gabosom@gmail.com o llene la siguiente forma y responderemos lo más pronto posible.</value>
   </data>
   <data name="ContactFormTitle" xml:space="preserve">
     <value>Pregunta o Comentario</value>
@@ -343,7 +346,7 @@
     <value>Se ha enviado la informacion exitosamente. Nos pondremos en contacto pronto.</value>
   </data>
   <data name="RoomDoubleMatrimonialDescription" xml:space="preserve">
-    <value>Ideal para una familia de 4 personas.</value>
+    <value>Ideal para dos parejas o una familia de 4 personas.</value>
   </data>
   <data name="RoomDoubleMatrimonialImageURL" xml:space="preserve">
     <value>RoomPictures/gallery-4.jpg</value>
@@ -352,7 +355,7 @@
     <value>4</value>
   </data>
   <data name="RoomDoubleMatrimonialShortDescription" xml:space="preserve">
-    <value>Ideal para una familia de 4 personas. </value>
+    <value>Ideal para dos parejas o una familia de 4 personas.</value>
   </data>
   <data name="RoomDoubleMatrimonialThumbURL" xml:space="preserve">
     <value>RoomPictures/gallery-4.jpg</value>
@@ -385,7 +388,7 @@
     <value>doublesimple</value>
   </data>
   <data name="RoomMatrimonialAndDoubleSimpleDescription" xml:space="preserve">
-    <value>Hay cuatro camas individuales, ideal para grupos grandes de personas. </value>
+    <value>Ideal para una familia de 4 personas.</value>
   </data>
   <data name="RoomMatrimonialAndDoubleSimpleImageURL" xml:space="preserve">
     <value>RoomPictures/gallery-4.jpg</value>
@@ -394,7 +397,7 @@
     <value>4</value>
   </data>
   <data name="RoomMatrimonialAndDoubleSimpleShortDescription" xml:space="preserve">
-    <value>Hay cuatro camas individuales, ideal para grupos grandes de personas.</value>
+    <value>Ideal para una familia de 4 personas.</value>
   </data>
   <data name="RoomMatrimonialAndDoubleSimpleThumbURL" xml:space="preserve">
     <value>RoomPictures/gallery-4.jpg</value>
@@ -406,7 +409,7 @@
     <value>MatrimonialAndDoubleSimple</value>
   </data>
   <data name="RoomMatrimonialAndSimpleDescription" xml:space="preserve">
-    <value>Ideal para una familia de 4 personas.</value>
+    <value>Ideal para una familia de 3 personas.</value>
   </data>
   <data name="RoomMatrimonialAndSimpleImageURL" xml:space="preserve">
     <value>RoomPictures/gallery-4.jpg</value>
@@ -415,7 +418,7 @@
     <value>3</value>
   </data>
   <data name="RoomMatrimonialAndSimpleShortDescription" xml:space="preserve">
-    <value>Ideal para una familia de 4 personas.</value>
+    <value>Ideal para una familia de 3 personas.</value>
   </data>
   <data name="RoomMatrimonialAndSimpleThumbURL" xml:space="preserve">
     <value>RoomPictures/gallery-4.jpg</value>
@@ -448,7 +451,7 @@
     <value>QuadrupleSimple</value>
   </data>
   <data name="RoomTripleSimpleDescription" xml:space="preserve">
-    <value>Tres personas caben comodamente. </value>
+    <value>Acomoda a 3 personas con amplio espacio y comodidad.</value>
   </data>
   <data name="RoomTripleSimpleImageURL" xml:space="preserve">
     <value>RoomPictures/gallery-4.jpg</value>
@@ -457,7 +460,7 @@
     <value>3</value>
   </data>
   <data name="RoomTripleSimpleShortDescription" xml:space="preserve">
-    <value>Tres personas caben comodamente.</value>
+    <value>Acomoda a 3 personas con amplio espacio y comodidad.</value>
   </data>
   <data name="RoomTripleSimpleThumbURL" xml:space="preserve">
     <value>RoomPictures/gallery-4.jpg</value>
@@ -469,6 +472,30 @@
     <value>TripleSimple</value>
   </data>
   <data name="RoomsBasicInfo" xml:space="preserve">
-    <value>&lt;ul&gt;&lt;li&gt;Wi-Fi&lt;/li&gt;&lt;li&gt;Baño&lt;/li&gt;&lt;li&gt;TV&lt;/li&gt;&lt;/ul&gt;</value>
+    <value>&lt;ul&gt;&lt;li&gt;Wi-Fi&lt;/li&gt;&lt;li&gt;Baño&lt;/li&gt;&lt;li&gt;TV cable&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="Banos" xml:space="preserve">
+    <value>Baños</value>
+  </data>
+  <data name="BanosHorsebackRiding" xml:space="preserve">
+    <value>Baños es de los lugares más hermosos de todo el Ecuador para hacer paseos en caballo.  Encontrarán unas magníficas vistas de las cascadas a las faldas del Volcán Tungurahua. Estos paseos son fenomenales para los amantes de la naturaleza.</value>
+  </data>
+  <data name="BanosMoto" xml:space="preserve">
+    <value>Puede rentar una cuatri-moto o un kart para 2 personas para recorrer Baños y conocer hasta las más secretas partes de la ciudad.</value>
+  </data>
+  <data name="BanosPailonDelDiablo" xml:space="preserve">
+    <value>El Pailón del Diablo es una joya de cascada y se encuentra muy cerca de la ciudad.  Al llegar al sitio, caminará 15 minutos para llegar a la cascada e inclusive caminará por unos caminos en forma de cuevas hasta encontrarse con la imponente cascada.</value>
+  </data>
+  <data name="BanosRafting" xml:space="preserve">
+    <value>Ecuador tiene una de las concentraciones más grandes de ríos en el mundo y un gran número de ellos desembocan en el Río Amazonas.  A 15 minutos del centro de la ciudad va a encontrar uno de los ríos más claros y escénicos de la región para ir río abajo y disfrutar de la naturaleza.</value>
+  </data>
+  <data name="BanosTungurahua" xml:space="preserve">
+    <value>El Volcán Tungurahua es el único volcán active en todo el país.  Paseos en chiva o caminatas alrededor del volcán siempre están disponibles.</value>
+  </data>
+  <data name="BanosZiplining" xml:space="preserve">
+    <value>Ziplining es una de las actividades más populares de Baños que involucra cruzar 2000 metros colgado a diferentes velocidades y alturas. El canopy esta en Puntzan, que está aproximadamente a 10 minutos del centro de Baños.  Con esta actividad, tendrá la oportunidad de ver increíbles paisajes y biodiversidad.</value>
+  </data>
+  <data name="EcuadorShortCode" xml:space="preserve">
+    <value>EC</value>
   </data>
 </root>

@@ -9,7 +9,7 @@
     <div class="header">
         <h2>@HotelEden.SpanishResources.ReservePageTitle</h2>
     </div>
-        <p>@HotelEden.SpanishResources.ReservePageDescription</p>
+        <div>@Html.Raw  (HotelEden.SpanishResources.ReservePageDescription)</div>
 
         @using (Html.BeginForm("SubmitReserve", "Rooms", FormMethod.Get))
         {
