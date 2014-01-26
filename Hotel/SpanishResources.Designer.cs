@@ -442,7 +442,7 @@ namespace HotelEden {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        ///   Looks up a localized string similar to RoomPictures/gallery-4_thumb.jpg.
         /// </summary>
         public static string RoomDoubleMatrimonialThumbURL {
             get {
@@ -532,7 +532,7 @@ namespace HotelEden {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RoomPictures/gallery-2.jpg.
+        ///   Looks up a localized string similar to RoomPictures/gallery-2_thumb.jpg.
         /// </summary>
         public static string RoomDoubleSimpleThumbURL {
             get {
@@ -604,7 +604,7 @@ namespace HotelEden {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        ///   Looks up a localized string similar to RoomPictures/gallery-4_thumb.jpg.
         /// </summary>
         public static string RoomMatrimonialAndDoubleSimpleThumbURL {
             get {
@@ -676,7 +676,7 @@ namespace HotelEden {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        ///   Looks up a localized string similar to RoomPictures/gallery-4_thumb.jpg.
         /// </summary>
         public static string RoomMatrimonialAndSimpleThumbURL {
             get {
@@ -757,7 +757,7 @@ namespace HotelEden {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RoomPictures/gallery-1.jpg.
+        ///   Looks up a localized string similar to RoomPictures/gallery-1_thumb.jpg.
         /// </summary>
         public static string RoomMatrimonialThumbURL {
             get {
@@ -847,7 +847,7 @@ namespace HotelEden {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        ///   Looks up a localized string similar to RoomPictures/gallery-4_thumb.jpg.
         /// </summary>
         public static string RoomQuadrupleSimpleThumbURL {
             get {
@@ -1045,7 +1045,7 @@ namespace HotelEden {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RoomPictures/gallery-4.jpg.
+        ///   Looks up a localized string similar to RoomPictures/gallery-4_thumb.jpg.
         /// </summary>
         public static string RoomTripleSimpleThumbURL {
             get {

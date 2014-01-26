@@ -145,7 +145,7 @@
     <value>Habitación ideal para una o dos personas.</value>
   </data>
   <data name="RoomMatrimonialThumbURL" xml:space="preserve">
-    <value>RoomPictures/gallery-1.jpg</value>
+    <value>RoomPictures/gallery-1_thumb.jpg</value>
   </data>
   <data name="RoomMatrimonialTitle" xml:space="preserve">
     <value>Matrimonial</value>
@@ -358,7 +358,7 @@
     <value>Ideal para dos parejas o una familia de 4 personas.</value>
   </data>
   <data name="RoomDoubleMatrimonialThumbURL" xml:space="preserve">
-    <value>RoomPictures/gallery-4.jpg</value>
+    <value>RoomPictures/gallery-4_thumb.jpg</value>
   </data>
   <data name="RoomDoubleMatrimonialTitle" xml:space="preserve">
     <value>2 Matrimoniales</value>
@@ -379,7 +379,7 @@
     <value>Acomoda a dos personas con amplio espacio y comodidad.</value>
   </data>
   <data name="RoomDoubleSimpleThumbURL" xml:space="preserve">
-    <value>RoomPictures/gallery-2.jpg</value>
+    <value>RoomPictures/gallery-2_thumb.jpg</value>
   </data>
   <data name="RoomDoubleSimpleTitle" xml:space="preserve">
     <value>2 Camas Sencillas</value>
@@ -400,7 +400,7 @@
     <value>Ideal para una familia de 4 personas.</value>
   </data>
   <data name="RoomMatrimonialAndDoubleSimpleThumbURL" xml:space="preserve">
-    <value>RoomPictures/gallery-4.jpg</value>
+    <value>RoomPictures/gallery-4_thumb.jpg</value>
   </data>
   <data name="RoomMatrimonialAndDoubleSimpleTitle" xml:space="preserve">
     <value>1 Matrimonial + 2 Camas Sencillas</value>
@@ -421,7 +421,7 @@
     <value>Ideal para una familia de 3 personas.</value>
   </data>
   <data name="RoomMatrimonialAndSimpleThumbURL" xml:space="preserve">
-    <value>RoomPictures/gallery-4.jpg</value>
+    <value>RoomPictures/gallery-4_thumb.jpg</value>
   </data>
   <data name="RoomMatrimonialAndSimpleTitle" xml:space="preserve">
     <value>1 Matrimonial + 1 Cama Sencilla</value>
@@ -442,7 +442,7 @@
     <value>Incluye 4 camas sencillas para maxima comodidad.</value>
   </data>
   <data name="RoomQuadrupleSimpleThumbURL" xml:space="preserve">
-    <value>RoomPictures/gallery-4.jpg</value>
+    <value>RoomPictures/gallery-4_thumb.jpg</value>
   </data>
   <data name="RoomQuadrupleSimpleTitle" xml:space="preserve">
     <value>4 simples</value>
@@ -463,7 +463,7 @@
     <value>Acomoda a 3 personas con amplio espacio y comodidad.</value>
   </data>
   <data name="RoomTripleSimpleThumbURL" xml:space="preserve">
-    <value>RoomPictures/gallery-4.jpg</value>
+    <value>RoomPictures/gallery-4_thumb.jpg</value>
   </data>
   <data name="RoomTripleSimpleTitle" xml:space="preserve">
     <value>3 sencillas</value>
