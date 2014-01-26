@@ -436,7 +436,6 @@
     <Content Include="Views\Home\BrownTemplate\Gallery.cshtml" />
     <Content Include="Views\Home\BrownTemplate\Banos.cshtml" />
     <Content Include="Views\Shared\_Template_Spotless.cshtml" />
-    <Content Include="Views\Home\BrownTemplate\Opcion2.cshtml" />
     <Content Include="Views\Home\Banos.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Gallery.cshtml" />
