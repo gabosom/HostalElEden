@@ -9,7 +9,7 @@
     <div class="header">
         <h2>@HotelEden.SpanishResources.ReservePageTitle</h2>
     </div>
-        <div>@Html.Raw  (HotelEden.SpanishResources.ReservePageDescription)</div>
+        <div>@Html.Raw(HotelEden.SpanishResources.ReservePageDescription)</div>
 
         @using (Html.BeginForm("SubmitReserve", "Rooms", FormMethod.Get))
         {
@@ -22,7 +22,7 @@
                         <th>@*@HotelEden.SpanishResources.RoomsCostColumn*@</th>
                         @*<th>@HotelEden.SpanishResources.RoomsReserveTotalColumn</th>*@
                     </tr>
-                    <tr class="roomListItemBreak">
+                    <tr class="roomListItemBreak"> 
                         <td colspan="3">
                             <hr />
                         </td>
